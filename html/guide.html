@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | Guide</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">1뎁스</a>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">1뎁스</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep select"><a class="btn_menu">2뎁스</a></li>
+              <li class="list_2dep"><a class="btn_menu">2뎁스</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contents_admin">
+        <div class="admin_wrap">
+
+          <h2 class="admin_title">타이틀</h2>
+
+          <div class="sort_wrap">
+            <p class="sort_title">텍스트</p>
+            <div class="sort_con">
+              <input type="text" placeholder="플레이스홀더">
+              <input type="text" class="sub_text_small" placeholder="text_small">
+              <input type="text" placeholder="disabled" disabled>
+              <div class="sort_double">
+                <input type="text" class="sort_text" placeholder="꽉차는 텍스트">
+              </div>
+            </div>
+          </div>
+
+          <div class="sort_wrap">
+            <p class="sort_title">셀렉트</p>
+            <div class="sort_con">
+              <select name="product_name" class="sort_select">
+                <option>셀렉트1-1</option>
+                <option>셀렉트1-2</option>
+              </select>
+              <select name="product_name" class="sort_select">
+                <option>셀렉트2-1</option>
+                <option>셀렉트2-2</option>
+              </select>
+              <input type="text" placeholder="플레이스홀더">
+            </div>
+          </div>
+
+          <div class="sort_wrap">
+            <p class="sort_title">기간</p>
+            <div class="sort_con">
+              <div class="sort_con_double">
+                <div class="sort_date">
+                  <input type="date"> ~ <input type="date">
+                </div>
+              </div>
+              <div class="sort_con_double">
+                <div class="sort_date">
+                  <input type="time"> ~ <input type="time">
+                </div>
+              </div>
+              <div class="sort_con_double">
+                <div class="sort_price">
+                  <span class="input_caption text_bold">텍스트</span>
+                  <input type="text" class="sort_price" placeholder="1">
+                </div>
+                <div class="sort_price">
+                  <span class="input_caption text_bold">서브</span>
+                  <input type="text" class="sort_price" placeholder="2">
+                </div>
+                <div class="sort_price">
+                  <span class="input_caption text_bold">서브</span>
+                  <input type="text" class="sort_price" placeholder="3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sort_wrap">
+            <p class="sort_title requir">체크박스</p>
+            <div class="sort_con">
+              <div class="sort_double">
+                <div class="input_type_check">
+                  <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1" checked>
+                  <label for="checkbox1">선택</label>
+                </div>
+                <div class="input_type_check">
+                  <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2">
+                  <label for="checkbox2">미선택</label>
+                </div>
+                <span class="caption sort_caption">추가 설명 회색</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sort_wrap">
+            <p class="sort_title requir">라디오</p>
+            <div class="sort_con">
+              <div class="sort_double">
+                <div class="input_type_radio">
+                  <input type="radio" name="radio" value="radio1" id="radio1">
+                  <label for="radio1">1111</label>
+                </div>
+                <div class="input_type_radio">
+                  <input type="radio" name="radio" value="radio2" id="radio2" checked>
+                  <label for="radio2">22222</label>
+                </div>
+                <div class="input_type_radio">
+                  <input type="radio" name="radio" value="radio3" id="radio3">
+                  <label for="radio3">333333333</label>
+                </div>
+                <div class="input_type_radio">
+                  <input type="radio" name="radio" value="radio4" id="radio4">
+                  <label for="radio4">444444</label>
+                </div>
+                <span class="caption sort_caption text_black">추가 설명 블랙</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_sort">
+            <button class="btn_default btn_sky">검색</button>
+          </div>
+
+          <div class="admin_box">
+            <div class="box_title">
+              <h3>박스타이틀</h3>
+            </div>
+            <div class="sort_wrap">
+              <div class="sort_con">
+                <div class="sort_con_double">
+                  <input type="email" placeholder="아이디">
+                  <input type="password" placeholder="비밀번호">
+                  <div class="input_type_check">
+                    <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1">
+                    <label for="checkbox1">저장</label>
+                  </div>
+                </div>
+                <div class="sort_con_double">
+                  <button class="btn_default btn_full">최대</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="admin_title">버튼</h2>
+
+          <div class="btn_wrap btn_collect btn_between">
+            <span class="text_bold">버튼 옆 텍스트</span>
+            <div>
+              <button class="btn_default">버튼</button>
+              <button class="btn_default btn_sky">버튼</button>
+            </div>
+          </div>
+
+          <div class="btn_wrap">
+            <button class="btn_default">기본</button>
+            <button class="btn_default btn_sky">하늘색</button>
+            <button class="btn_default btn_white">흰색</button>
+            <button class="btn_default btn_border">보더</button>
+            <button class="btn_middle">middle</button>
+            <button class="btn_small">small</button>
+          </div>
+
+          <h2 class="admin_title">팝업 (on 클래스 추가 필요)</h2>
+
+          <div class="popup_wrap">
+            <div class="admin_popup">
+              <h3>팝업 타이틀</h3>
+              <p>
+                팝업 내용
+                <select name="product_name" class="sort_select">
+                  <option>셀렉트1</option>
+                  <option>셀렉트2</option>
+                </select>
+              </p>
+              <button class="btn_middle btn_sky">확인</button>
+              <button class="btn_close"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+
+          <div class="popup_wrap">
+            <div class="admin_popup">
+              <h3>팝업 내 셀렉트만</h3>
+              <select name="product_name" class="sort_select">
+                <option>셀렉트1</option>
+                <option>셀렉트2</option>
+              </select>
+              <button class="btn_middle btn_sky">확인</button>
+              <button class="btn_close"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+
+          <div class="popup_wrap">
+            <div class="page_popup">
+              <h3>넓은 팝업 (높이 컨텐츠에 맞게)</h3>
+              <button class="btn_close"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+
+          <h2 class="admin_title">테이블</h2>
+          <table class="table_checklist">
+            <thead>
+              <tr>
+                <th style="width: 92px;">No</th>
+                <th style="width: 135px;">test</th>
+                <th style="width: 375px;">test2</th>
+                <th style="width: 145px;">test3</th>
+                <th style="width: 145px;">test4</th>
+                <th style="width: 157px;">test5</th>
+                <th style="width: 135px;">test6</th>
+                <th style="width: 189px;">test7</th>
+                <th style="width: 147px;">test8</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>PB00001</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">하이퍼링크</a></span></td>
+                <td>01012345678</td>
+                <td>30,000</td>
+                <td>홍길동</td>
+                <td>2024.08.01 12:00</td>
+                <td>80명 (운전 70, 동승 10)</td>
+                <td><button class=" btn_small">미리보기</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>PA00003</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">test test test test test test test test test test test test</a></span></td>
+                <td>01012345678</td>
+                <td>1,200</td>
+                <td>홍길동</td>
+                <td>2024.08.01 12:00</td>
+                <td>80명 (운전 70, 동승 10)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>PA00003</td>
+                <td><span class="text_overflow">링크없음</span></td>
+                <td>01012345678</td>
+                <td>1,200</td>
+                <td>홍길동</td>
+                <td>2024.08.01 12:00</td>
+                <td>80명 (운전 70, 동승 10)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>PA00003</td>
+                <td><span class="text_overflow"><a class="text_underline" href="#">언더라인만</a></span></td>
+                <td>01012345678</td>
+                <td>50,000</td>
+                <td>홍길동</td>
+                <td>2024.08.01 12:00</td>
+                <td>80명 (운전 70, 동승 10)</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="135px">1</th>
+                <th width="385px">2</th>
+                <th width="145px">3</th>
+                <th width="145px">4</th>
+                <th width="215px">5</th>
+                <th width="155px">6</th>
+                <th width="155px">7</th>
+                <th width="90px"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="text_bold">볼드</span></td>
+                <td><span class="text_overflow">짧은글</span></td>
+                <td>50,000</td>
+                <td>50,000</td>
+                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                <td>텍스트</td>
+                <td>test</td>
+                <td><button class="btn_small">미리보기</button></td>
+              </tr>
+              <tr>
+                <td><span class="text_bold">볼드</span></td>
+                <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
+                <td>30,000</td>
+                <td>30,000</td>
+                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                <td><span class="text_red">빨간색</span></td>
+                <td>test</td>
+                <td><button class="btn_small">미리보기</button></td>
+              </tr>
+              <tr>
+                <td><span class="text_bold">볼드</span></td>
+                <td><span class="text_overflow">짧은글</span></td>
+                <td>50,000</td>
+                <td>50,000</td>
+                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                <td>텍스트</td>
+                <td>test</td>
+                <td><button class="btn_small">미리보기</button></td>
+              </tr>
+              <tr>
+                <td><span class="text_bold">볼드</span></td>
+                <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
+                <td>30,000</td>
+                <td>30,000</td>
+                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                <td><span class="text_red">빨간색</span></td>
+                <td>test</td>
+                <td><button class="btn_small">미리보기</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table_detail">
+            <tr>
+              <th>1</th>
+              <td>1111</td>
+              <th>2</th>
+              <td>2222</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>1111</td>
+              <th>2</th>
+              <td>2222</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>1111</td>
+              <th>2</th>
+              <td>2222</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
