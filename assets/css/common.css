@@ -123,6 +123,9 @@
   padding-bottom: 32px;
   margin-bottom: 32px;
   border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .admin_flex {
   display: flex;
@@ -306,7 +309,7 @@
 .btn_caption {
   margin-left: 20px;
 }
-.requir::after {
+.requir::before {
   content: "*";
   color: #ff5353;
 }
@@ -397,14 +400,15 @@
   margin-left: 6px;
 }
 .admin_wrap .sort_date select {
-  width: 100px;
+  width: 143px;
 }
 .admin_wrap .table_detail select {
   width: 100%;
   max-width: calc(100% - 16px);
   margin: 10px auto 0;
 }
-.admin_wrap .popup_wrap select {
+.admin_wrap .popup_wrap select,
+.admin_wrap .popup_wrap input {
   display: block;
   width: 100%;
   margin: 16px 0;
@@ -654,6 +658,7 @@
   align-items: center;
   padding-bottom: 20px;
   flex-wrap: wrap;
+  width: 100%;
   border-bottom: 1px solid #e8e8e8;
   overflow-x: overlay;
   overflow-y: hidden;
@@ -667,9 +672,6 @@
 }
 .sort_wrap:last-of-type {
   padding-bottom: 0;
-  border-bottom: none;
-}
-.sort_wrap:last-of-type {
   border-bottom: none;
 }
 .sort_wrap + .sort_wrap {
@@ -715,6 +717,28 @@
 }
 .sort_con_sub + .sort_con_sub {
   margin-top: 18px;
+}
+.sort_column {
+  display: flex;
+  flex-direction: column;
+}
+.sort_column + .sort_column {
+  margin-top: 36px;
+}
+.sort_column .sort_title {
+  width: 100%;
+}
+.sort_column .sort_title::before {
+  content: "·";
+  margin-right: 8px;
+}
+.sort_column .sort_con {
+  margin-top: 16px;
+  padding-left: 32px;
+  width: 100%;
+}
+.sort_column .sort_con .sort_double {
+  gap: 8px;
 }
 .sort_title {
   align-self: flex-start;
@@ -896,6 +920,7 @@
   padding: 20px 24px;
 }
 .btn_wrap {
+  position: relative;
   display: flex;
   align-items: baseline;
   gap: 6px;
@@ -926,6 +951,13 @@
 }
 .btn_center {
   justify-content: center;
+}
+.btn_end {
+  justify-content: end;
+}
+.btn_right {
+  position: absolute;
+  right: 0;
 }
 .btn_sort button {
   width: 120px;
@@ -996,6 +1028,10 @@
 .btn_full {
   width: 100%;
 }
+.sort_con .btn_default {
+  width: auto;
+  padding: 13px 16px;
+}
 .btn_sky {
   border: none;
   background: #00bce5;
@@ -1010,6 +1046,10 @@
   background: #f5f7fa;
   border: 1px solid #1e1e1e;
   color: #1e1e1e;
+}
+.btn_red {
+  background: #ff5353;
+  color: #fff;
 }
 .btn_tooltip {
   margin-left: 2px;
@@ -1182,6 +1222,9 @@
   font-size: 16px;
   line-height: 24px;
 }
+.admin_popup h3 + button {
+  margin-top: 24px;
+}
 .admin_popup p {
   margin: 13px auto 24px;
   font-size: 14px;
@@ -1206,6 +1249,30 @@
 }
 .page_popup .box_title {
   margin-bottom: 20px;
+}
+.page_popup .form_img {
+  width: 100%;
+  margin: 40px auto;
+}
+.page_popup .form_img img {
+  width: 100%;
+  height: auto;
+}
+.page_popup .form_input_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.page_popup .form_input_wrap .form_input {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.page_popup .sign_wrap {
+  margin: 40px auto;
+}
+.page_popup .btn_center {
+  margin-top: 60px;
 }
 .tooltip_popup {
   position: relative;
@@ -1332,24 +1399,35 @@
 }
 .table_list th {
   padding: 20px 0;
-  text-align: left;
+  text-align: center;
   color: #7c7c7c;
 }
 .table_list th:first-of-type {
   padding-left: 20px;
+  text-align: left;
 }
 .table_list td {
   padding: 20px 0;
+  text-align: center;
   border-top: 1px solid #e8e8e8;
 }
 .table_list td:first-of-type {
   padding-left: 20px;
+  text-align: left;
+}
+.table_list td .btn_wrap {
+  display: inline-block;
+  margin-left: 6px;
+}
+.table_list td .btn_wrap button + button {
+  margin-left: 2px;
 }
 .table_page {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 20px 0 20px;
+  margin-bottom: 48px;
   font-size: 13px;
   line-height: 12px;
   color: #7c7c7c;
@@ -1583,7 +1661,7 @@
 }
 
 .sort_double input[type="password"],
-.sort_double input[type="tel"] {
+.sort_con input[type="tel"] {
   width: 200px;
 }
 
@@ -1594,4 +1672,50 @@
   align-items: center;
   gap: 20px;
   height: 100%;
+}
+.admin .center_con_wrap h4 {
+  font-size: 24px;
+}
+.admin .center_con_wrap .btn_wrap {
+  margin-top: 20px;
+}
+
+.report_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.report_wrap .report_top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.report_wrap .report_top p {
+  font-size: 12px;
+}
+.report_wrap ol > li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.report_wrap ol > li + li {
+  margin-top: 24px;
+}
+.report_wrap ol ul {
+  padding-left: 20px;
+  font-size: 14px;
+}
+.report_wrap ol ul li + li {
+  margin-top: 12px;
+}
+.report_wrap ol ul ul {
+  margin-top: 12px;
+}
+.report_wrap .li_circle {
+  list-style: disc;
+}
+.report_wrap .li_hyphen::before {
+  content: "-";
+  position: absolute;
+  margin-left: -12px;
 }

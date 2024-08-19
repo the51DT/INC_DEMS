@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승 행사 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep select"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <!-- 데이터 없는 케이스 -->
+          <!-- <div class="center_con_wrap">
+            <h4>아직 개설된 시승 행사가 없습니다</h4>
+            <p>행사를 만들고, 관리해 보세요</p>
+            <div class="btn_wrap btn_center">
+              <button class="btn_default">+ 행사 등록하기</button>
+            </div>
+          </div> -->
+          <!-- 데이터 있는 케이스 -->
+          <h2 class="admin_title">진행 / 예정행사</h2>
+          <div class="btn_wrap btn_between">
+            <span class="text_bold">진행중 <span>(2)</span></span>
+            <div>
+              <button class="btn_default">+ 행사 등록하기</button>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="420px">행사명</th>
+                <th width="200px">행사일정 (기간)</th>
+                <th width="200px">계획인원</th>
+                <th width="200px">참석인원</th>
+                <th width="80px">상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">2024 제네시스 G70 미디어 시승행사<span class="btn_wrap"><button class="btn_fit">편집</button></span></td>
+                <td>2024.05.01 ~ 2024.05.05 (5일간)</td>
+                <td>120명 (운전 110, 동승 10)</td>
+                <td>119명 (운전 110, 동승 9)</td>
+                <td><span class="text_bold text_red">진행중</span> (1/5일차)</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="text_bold">2024 기아자동차 EV3 미디어 시승행사<span class="btn_wrap"><button class="btn_fit">편집</button></span></td>
+                <td>2024.04.31 ~ 2024.04.31 (1일간)</td>
+                <td>90명 (운전80, 동승10)</td>
+                <td>92명 (운전82, 동승 10)</td>
+                <td><span class="text_bold text_red">진행중</span> (1/1일차)</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_between">
+            <span class="text_bold">진행예정 <span>(3)</span></span>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="420px">행사명</th>
+                <th width="200px">행사일정 (기간)</th>
+                <th width="200px">계획인원</th>
+                <th width="200px">참석인원</th>
+                <th width="80px">상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">2024 기아자동차 EV6 미디어 시승행사<span class="btn_wrap"><button class="btn_fit">편집</button></span></td>
+                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                <td>80명 (운전 70, 동승 10)</td>
+                <td>-</td>
+                <td><span class="text_bold text_blue">D-10</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="text_bold">2025 현대자동차 펠리세이드 미디어 시승행사<span class="btn_wrap"><button class="btn_fit">편집</button></span></td>
+                <td>2024.12-10 ~ 2024.12.13 (3일간)</td>
+                <td>150명 (운전 145, 동승 5)</td>
+                <td>-</td>
+                <td><span class="text_bold text_blue">D-100</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="text_bold">2025 제네시스 G90 미디어 시승행사<span class="btn_wrap"><button class="btn_fit">편집</button></span></td>
+                <td>2025.03.01 ~ 2025.03.04 (4일간)</td>
+                <td>60명 (운전 55, 동승 5)</td>
+                <td>-</td>
+                <td><span class="text_bold text_blue">D-200</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

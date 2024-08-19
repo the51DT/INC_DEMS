@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승 행사 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep select"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <h2 class="admin_title">행사 등록 (일반사항)</h2>
+
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">주관사</p>
+                <div class="sort_con">
+                  <div class="input_type_radio">
+                    <input type="radio" name="host" value="host1" id="host1">
+                    <label for="host1">현대자동차</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="host" value="host2" id="host2">
+                    <label for="host2">제네시스</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="host" value="host3" id="host3">
+                    <label for="host3">기아자동차</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="host" value="host4" id="host4">
+                    <label for="host4">기타 제조사</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">행사명</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="행사명 입력">
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">행사기간</p>
+                <div class="sort_con">
+                  <div class="sort_date">
+                    <input type="date"> ~ <input type="date">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">계획인원</p>
+                <div class="sort_con">
+                  <div class="sort_double">
+                    <div class="sort_date">
+                      <input type="date">
+                      <select name="driver" class="sort_select">
+                        <option>운전자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <select name="companion" class="sort_select">
+                        <option>동반자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <button class="btn_default">+ 추가</button>
+                    </div>
+                  </div>
+                  <div class="sort_double">
+                    <div class="sort_date">
+                      <input type="date">
+                      <select name="driver" class="sort_select">
+                        <option>운전자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <select name="companion" class="sort_select">
+                        <option>동반자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <button class="btn_default">+ 추가</button>
+                      <button class="btn_default btn_red">- 삭제</button>
+                    </div>
+                  </div>
+                  <div class="sort_double">
+                    <div class="sort_date">
+                      <input type="date">
+                      <select name="driver" class="sort_select">
+                        <option>운전자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <select name="companion" class="sort_select">
+                        <option>동반자수 선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <button class="btn_default">+ 추가</button>
+                      <button class="btn_default btn_red">- 삭제</button>
+                    </div>
+                  </div>
+                  <div class="sort_double">
+                    <p>행사일을 구분하여 계획 인원수를 등록해주세요</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">시승차종</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="시승차종 입력 ex) 2024 GENESIS G70">
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">캠페인코드</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="캠페인코드 입력">
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">출발지</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="장소명 입력 ex) 주렁주렁 하남점, 000점, 000점">
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">기착지</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="기착지 입력 ex) 주렁주렁 하남점">
+                </div>
+              </div>
+            </div>
+
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">도착지</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="도착지 입력">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_collect btn_center">
+            <button class="btn_default btn_white">취소</button>
+            <button class="btn_default">다음</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
