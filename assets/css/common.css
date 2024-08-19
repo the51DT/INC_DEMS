@@ -1,8 +1,15 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: Apple SD Gothic;
-  src: url("../font/AppleSDGothicNeoB.ttf") format("truetype");
+  font-family: NanumSquare;
+  src: url("../font/NanumSquareR.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
+@font-face {
+  font-family: NanumSquare;
+  src: url("../font/NanumSquareB.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   unicode-range: U+0-10FFFF;
@@ -107,7 +114,7 @@
 }
 
 .admin_wrap {
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   color: #1e1e1e;
   padding: 40px 32px;
 }
@@ -277,7 +284,7 @@
   border-bottom: 2px solid #00bce5;
 }
 .admin_wrap button {
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 .line {
   margin: 20px 0;
@@ -351,7 +358,7 @@
 }
 
 .admin_wrap input {
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 .admin_wrap select {
   width: 230px;
@@ -359,7 +366,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   background-image: url("../img/icon/select_arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
@@ -413,7 +420,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   line-height: 13px;
   max-width: 474px;
   width: 100%;
@@ -504,7 +511,7 @@
   border-radius: 4px;
   font-size: 13px;
   line-height: 12px;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   text-align: left;
 }
 .admin_wrap input[type="date"]::-webkit-calendar-picker-indicator {
@@ -595,7 +602,7 @@
   border: 1px solid #1e1e1e;
   border-radius: 4px;
   background: #fff;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   font-size: 13px;
   font-weight: 700;
 } */
@@ -606,7 +613,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   line-height: 13px;
   width: 100%;
 }
@@ -623,7 +630,7 @@
   padding: 20px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   font-size: 13px;
   color: #1e1e1e;
 }
@@ -1168,7 +1175,7 @@
   border-radius: 16px;
   background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
   text-align: center;
 }
 .admin_popup h3 {
@@ -1192,7 +1199,7 @@
   padding: 36px 32px 40px;
   border-radius: 16px;
   background: #f5f7fa;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 .page_popup::-webkit-scrollbar {
   width: 1px;
@@ -1209,7 +1216,7 @@
   padding: 36px 24px 40px;
   border-radius: 16px;
   background: #fff;
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 .tooltip_popup h3 {
   display: flex;
@@ -1257,7 +1264,7 @@
 }
 
 .admin_wrap table {
-  font-family: "Apple SD Gothic", sans-serif;
+  font-family: "NanumSquare", sans-serif;
 }
 .table_checklist {
   width: 100%;
@@ -1578,4 +1585,13 @@
 .sort_double input[type="password"],
 .sort_double input[type="tel"] {
   width: 200px;
+}
+
+.admin .center_con_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
 }
