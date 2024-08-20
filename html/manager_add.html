@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 관리자 계정 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep select"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <h2 class="admin_title">계정 등록</h2>
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">이름</p>
+                <div class="sort_con">
+                  <input type="text" class="input_full" placeholder="이름을 입력해주세요">
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">E-mail (ID)</p>
+                <div class="sort_con">
+                  <input type="email" class="input_full" placeholder="이메일 주소를 입력해주세요 (ID)">
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">Password</p>
+                <div class="sort_con">
+                  <input type="password" class="input_full" placeholder="영문, 숫자, 특수문자 조합 8자리 이상">
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">휴대폰번호</p>
+                <div class="sort_con">
+                  <input type="tel" class="input_full" placeholder="Ex)01012345678">
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">계정 구분</p>
+                <div class="sort_con">
+                  <div class="input_type_radio">
+                    <input type="radio" name="division" value="division1" id="division1">
+                    <label for="division1">슈퍼관리자</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="division" value="division2" id="division2">
+                    <label for="division2">일반관리자</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="division" value="division3" id="division3">
+                    <label for="division3">행사 STAFF(팀장)</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="division" value="division4" id="division4">
+                    <label for="division4">행사 STAFF(팀원)</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="division" value="division5" id="division5">
+                    <label for="division5">광고주</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">권한 설정 I</p>
+                <div class="sort_con">
+                  <table class="table_list table_manager">
+                    <thead>
+                      <tr>
+                        <th width="200px">메뉴명</th>
+                        <th width="100px">작성 / 수정권한</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">시승행사 관리 (홈)</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu1" value="menu1_1" id="menu1_1">
+                              <label for="menu1_1">진행/예정 행사</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu1" value="menu1_2" id="menu1_2">
+                              <label for="menu1_2">종료된 행사</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu1" value="menu1_3" id="menu1_3">
+                              <label for="menu1_3">행사등록</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority1" value="view" id="authority1_view">
+                              <label for="authority1_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority1" value="edit" id="authority1_edit">
+                              <label for="authority1_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">시승 동의서 관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu2" value="menu2_1" id="menu2_1">
+                              <label for="menu2_1">시승동의서 목록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu2" value="menu2_2" id="menu2_2">
+                              <label for="menu2_2">시승동의서 등록</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority2" value="view" id="authority2_view">
+                              <label for="authority2_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority2" value="edit" id="authority2_edit">
+                              <label for="authority2_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">관리자 계정관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu3" value="menu3_1" id="menu3_1">
+                              <label for="menu3_1">계정목록계정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu3" value="menu3_2" id="menu3_2">
+                              <label for="menu3_2">등록권한관리</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority3" value="view" id="authority3_view">
+                              <label for="authority3_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority3" value="edit" id="authority3_edit">
+                              <label for="authority3_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title">권한 설정 II</p>
+                <div class="sort_con">
+                  <table class="table_list table_manager">
+                    <thead>
+                      <tr>
+                        <th width="200px">메뉴명</th>
+                        <th width="100px">작성 / 수정권한</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">행사 홈</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu4" value="menu4_1" id="menu4_1">
+                              <label for="menu4_1">DASHBOARD</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority4" value="view" id="authority4_view">
+                              <label for="authority4_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority4" value="edit" id="authority4_edit">
+                              <label for="authority4_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">시승자 관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu5" value="menu5_1" id="menu5_1">
+                              <label for="menu5_1">시승자 명단</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu5" value="menu5_2" id="menu5_2">
+                              <label for="menu5_2">시승자 등록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu5" value="menu5_3" id="menu5_3">
+                              <label for="menu5_3">시승동의서</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority5" value="view" id="authority5_view">
+                              <label for="authority5_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority5" value="edit" id="authority5_edit">
+                              <label for="authority5_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">시승차량 관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu6" value="menu6_1" id="menu6_1">
+                              <label for="menu6_1">차량 목록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu6" value="menu6_2" id="menu6_2">
+                              <label for="menu6_2">차량 등록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu6" value="menu6_3" id="menu6_3">
+                              <label for="menu6_3">운행 이력</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu6" value="menu6_4" id="menu6_4">
+                              <label for="menu6_4">연변관리</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority6" value="view" id="authority6_view">
+                              <label for="authority6_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority6" value="edit" id="authority6_edit">
+                              <label for="authority6_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">시승차량 이슈관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu7" value="menu7_1" id="menu7_1">
+                              <label for="menu7_1">이슈 목록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu7" value="menu7_2" id="menu7_2">
+                              <label for="menu7_2">이슈 등록</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority7" value="view" id="authority7_view">
+                              <label for="authority7_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority7" value="edit" id="authority7_edit">
+                              <label for="authority7_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">운영 정보 공유</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu8" value="menu8_1" id="menu8_1">
+                              <label for="menu8_1">코스정보 공유</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu8" value="menu8_2" id="menu8_2">
+                              <label for="menu8_2">DEMS 매뉴얼</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority8" value="view" id="authority8_view">
+                              <label for="authority8_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority8" value="edit" id="authority8_edit">
+                              <label for="authority8_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">시승 리포트</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu9" value="menu9_1" id="menu9_1">
+                              <label for="menu9_1">시승리포트</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority9" value="view" id="authority9_view">
+                              <label for="authority9_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority9" value="edit" id="authority9_edit">
+                              <label for="authority9_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">초대장 관리</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu10" value="menu10_1" id="menu10_1">
+                              <label for="menu10_1">초대장 목록</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu10" value="menu10_2" id="menu10_2">
+                              <label for="menu10_2">초대장 등록</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority10" value="view" id="authority10_view">
+                              <label for="authority10_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority10" value="edit" id="authority10_edit">
+                              <label for="authority10_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">STAFF 알림</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu11" value="menu11_1" id="menu11_1">
+                              <label for="menu11_1">공지사항</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="menu11" value="menu11_2" id="menu11_2">
+                              <label for="menu11_2">행사FEED</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority11" value="view" id="authority11_view">
+                              <label for="authority11_view">조회한정</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="authority11" value="edit" id="authority11_edit">
+                              <label for="authority11_edit">작성/수정</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">접근 허용 행사</p>
+                <div class="sort_con">
+                  <table class="table_list table_manager">
+                    <thead>
+                      <tr>
+                        <th width="200px">행사명</th>
+                        <th width="100px">상태</th>
+                        <th width="100px">접근 허용</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2024 기아자동차 EV6 미디어 시승행사</td>
+                        <td><span class="text_red">진행중</span> (1/5 일차)</td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="access" id="access1">
+                              <label for="access1">허가</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="no_access" id="access1_no">
+                              <label for="access1_no">불가</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025 현대자동차 펠리세이드 미디어 시승행사</td>
+                        <td><span class="text_blue">D-30</span></td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="access" id="access1">
+                              <label for="access1">허가</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="no_access" id="access1_no">
+                              <label for="access1_no">불가</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025 제네시스 G90 미디어 시승행사</td>
+                        <td>종료</td>
+                        <td>
+                          <div class="table_manager_input">
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="access" id="access1">
+                              <label for="access1">허가</label>
+                            </div>
+                            <div class="input_type_check">
+                              <input type="checkbox" name="access1" value="no_access" id="access1_no">
+                              <label for="access1_no">불가</label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="caption_area">* 행사 STAFF, 광고주 계정은 진행중인 행사, 예정된 행사만 제어할 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_collect btn_center">
+            <button class="btn_default btn_white">취소</button>
+            <button class="btn_default popOpen" data-pop="complete">저장</button>
+            <button class="btn_default btn_white btn_right popOpen" data-pop="delete">계정삭제</button>
+          </div>
+
+          <div class="popup_wrap" id="delete">
+            <div class="admin_popup">
+              <h3>정말 삭제 하시겠습니까?</h3>
+              <p>
+                계정 관련 정보가 모두 삭제됩니다<br>
+                신중하게 결정해주세요
+                <input type="text" placeholder="입력창에 ‘삭제’라고 입력 후 확인 클릭">
+              </p>
+              <button class="btn_middle btn_white popClose">취소</button>
+              <button class="btn_middle btn_sky popClose popOpen" data-pop="delete_complete">확인</button>
+            </div>
+          </div>
+
+          <div class="popup_wrap" id="delete_complete">
+            <div class="admin_popup">
+              <h3>삭제되었습니다</h3>
+              <button class="btn_middle btn_sky popClose">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 관리자 계정 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep select"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <h2 class="admin_title">계정 목록</h2>
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_half">
+                <div>
+                  <p class="sort_title">이름</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="이름을 입력하세요">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">휴대폰</p>
+                  <div class="sort_con">
+                    <input type="tel" placeholder="휴대폰 번호를 입력하세요">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_half">
+                <div>
+                  <p class="sort_title">이메일(ID)</p>
+                  <div class="sort_con">
+                    <input type="email" placeholder="이메일 주소를 입력하세요">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">계정구분</p>
+                  <div class="sort_con">
+                    <select name="product_name" class="sort_select">
+                      <option>계정 구분을 선택하세요</option>
+                      <option>1</option>
+                    </select>
+                    <button class="btn_default">조회</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_collect btn_end">
+            <button class="btn_default"><img src="../assets/img/icon/profile.svg" class="btn_img">+ 계정추가</button>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="125px" class="text_center">소속</th>
+                <th width="125px">이름</th>
+                <th width="200px">이메일(ID)</th>
+                <th width="200px">휴대폰</th>
+                <th width="150px">계정 구분</th>
+                <th width="250px">계정 생성일자</th>
+                <th width="80px">설정</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text_center">더피프티원</td>
+                <td>이재호</td>
+                <td>jhlee@the-51.com</td>
+                <td>01012345678</td>
+                <td>슈퍼관리자</td>
+                <td>2024.08.01 12:00</td>
+                <td><button class="btn_icon"><img src="../assets/img/icon/setting.svg"></button></td>
+              </tr>
+              <tr>
+                <td class="text_center">이노션</td>
+                <td>송기철</td>
+                <td>song@test.com</td>
+                <td>01012345678</td>
+                <td>일반관리자</td>
+                <td>2024.07.30 15:00</td>
+                <td><button class="btn_icon"><img src="../assets/img/icon/setting.svg"></button></td>
+              </tr>
+              <tr>
+                <td class="text_center">오토에버</td>
+                <td>김진호</td>
+                <td>kim@test.com</td>
+                <td>-</td>
+                <td>행사STAFF (팀장)</td>
+                <td>2023.06.01 17:30</td>
+                <td><button class="btn_icon"><img src="../assets/img/icon/setting.svg"></button></td>
+              </tr>
+              <tr>
+                <td class="text_center">더피프티원</td>
+                <td>조종영</td>
+                <td>cho@test.com</td>
+                <td>-</td>
+                <td>광고주</td>
+                <td>2023.01.02 20:30</td>
+                <td><button class="btn_icon"><img src="../assets/img/icon/setting.svg"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

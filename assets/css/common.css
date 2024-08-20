@@ -64,13 +64,21 @@
   top: 0;
   left: 0;
   width: 220px;
-  padding-top: 20px;
+  padding: 20px 0;
   background: #FFFFFF;
   height: 100%;
+  overflow-y: auto;
   z-index: 10;
   box-shadow: 5px 0px 10px -3px #b9b9b9;
   transform: translateX(-110%);
   transition: transform 0.3s ease-in-out;
+}
+.admin .lnb_admin::-webkit-scrollbar {
+  width: 3px;
+}
+.admin .lnb_admin::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 42%, 0.49);
+  border-radius: 999px;
 }
 .admin .lnb_admin.on {
   transform: translateX(0);
@@ -126,6 +134,22 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+.admin_wrap .admin_title .admin_title_sub {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: auto;
+}
+.admin_wrap .admin_title .admin_title_sub .btn_default {
+  width: fit-content;
+  padding: 13px 20px;
+}
+.admin_wrap .admin_title .admin_title_sub p {
+  font-size: 14px;
+  color: #7C7C7C;
 }
 .admin_flex {
   display: flex;
@@ -312,6 +336,9 @@
 .requir::before {
   content: "*";
   color: #ff5353;
+}
+.text_center {
+  text-align: center !important;
 }
 .text_red {
   color: #ff5353;
@@ -573,19 +600,19 @@
   width: 314px;
   background-color: #FFF;
 }
-.admin_wrap .input_type_file input[type="file"] {
+/* .admin_wrap .input_type_file input[type="file"] {
   display: none;
-}
+} */
 .admin_wrap .input_type_file .input_type_file_button {
   max-width: 120px;
-  padding: 13px 34px;
+  padding: 13px 20px;
   border: 1px solid #1e1e1e;
   border-radius: 4px;
   background: #fff;
   font-size: 13px;
   font-weight: 700;
 }
-/* .admin_wrap input[type="file"] {
+.admin_wrap input[type="file"] {
   width: 100%;
   max-width: calc(100% - 130px);
   margin: 0;
@@ -594,6 +621,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   color: #a2a2a2;
+  background: #FFF;
   overflow: visible;
 }
 .admin_wrap input[type="file"]::file-selector-button {
@@ -602,14 +630,14 @@
   right: 0;
   transform: translate(0, -50%);
   margin: 0;
-  padding: 11px 35px;
+  padding: 13px 35px;
   border: 1px solid #1e1e1e;
   border-radius: 4px;
   background: #fff;
   font-family: "NanumSquare", sans-serif;
   font-size: 13px;
   font-weight: 700;
-} */
+}
 .admin_wrap input[type="email"],
 .admin_wrap input[type="password"],
 .admin_wrap input[type="tel"] {
@@ -620,6 +648,13 @@
   font-family: "NanumSquare", sans-serif;
   line-height: 13px;
   width: 100%;
+}
+.admin_wrap input.input_full {
+  width: 100%;
+  max-width: calc(100% - 10px);
+}
+.admin_wrap input::placeholder {
+  color: #a2a2a2;
 }
 .admin_wrap input:focus {
   outline: none;
@@ -679,6 +714,22 @@
 }
 .sort_wrap .admin_tab {
   margin-bottom: 0;
+}
+.sort_wrap.sort_half {
+  gap: 8px;
+}
+.sort_wrap.sort_half > div {
+  display: flex;
+  width: calc(50% - 4px);
+  flex-shrink: 0;
+}
+.sort_wrap.sort_half .sort_con input,
+.sort_wrap.sort_half .sort_con select {
+  width: 200px;
+}
+.sort_wrap.sort_half .sort_coulmn {
+  padding: 0;
+  border: none;
 }
 .sort_double {
   width: 100%;
@@ -945,6 +996,7 @@
 }
 .btn_between {
   justify-content: space-between;
+  width: 100%;
 }
 .btn_between span {
   font-size: 13px;
@@ -1027,6 +1079,27 @@
 }
 .btn_full {
   width: 100%;
+}
+.btn_icon {
+  width: 24px;
+  height: 24px;
+}
+.btn_icon img {
+  width: 100%;
+}
+button .btn_img {
+  margin-right: 4px;
+}
+.btn_download {
+  display: flex;
+  gap: 6px;
+}
+.btn_download::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon/download.svg);
 }
 .sort_con .btn_default {
   width: auto;
@@ -1238,7 +1311,7 @@
   width: 990px;
   height: fit-content;
   max-height: calc(100% - 40px);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 36px 32px 40px;
   border-radius: 16px;
   background: #f5f7fa;
@@ -1422,7 +1495,41 @@
 .table_list td .btn_wrap button + button {
   margin-left: 2px;
 }
+.table_list.table_manager {
+  margin-top: 10px;
+}
+.table_list.table_manager thead {
+  background: #2C3238;
+}
+.table_list.table_manager thead th {
+  text-align: center;
+  color: #FFF;
+} 
+.table_list.table_manager tbody tr {
+  background: #FFF;
+}
+.table_list.table_manager tbody tr:nth-child(odd) {
+  background: #efefef;
+}
+.table_list.table_manager .table_manager_input {
+  display: flex;
+  gap: 8px;
+}
+.table_list.table_manager tbody td:first-child,
+.table_list.table_manager tbody td:last-child {
+  padding-left: 20px;
+}
+.caption_area {
+  margin: 16px 0;
+}
+.caption_area li {
+  list-style: disc inside;
+}
+.caption_area li + li {
+  margin-top: 12px;
+}
 .table_page {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1663,6 +1770,10 @@
 .sort_double input[type="password"],
 .sort_con input[type="tel"] {
   width: 200px;
+}
+.admin_wrap .sort_con input.input_full {
+  width: 100%;
+  max-width: calc(100% - 10px);
 }
 
 .admin .center_con_wrap {
