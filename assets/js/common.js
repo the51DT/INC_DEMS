@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function startPosition(e) {
       isDrawing = true;
       draw(e);
-      hidePlaceholder(); // 플레스홀더 숨김
     }
 
     function endPosition() {
@@ -126,9 +125,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    function handleTouch(e) {
+      e.preventDefault(); // 터치 관련
+      const touch = e.touches[0];
+      const rect = canvas.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+
+      if (isDrawing) {
+        sign.lineTo(x, y);
+        sign.stroke();
+        sign.beginPath();
+        sign.moveTo(x, y);
+      }
+    }
+
     canvas.addEventListener('mousedown', startPosition);
     canvas.addEventListener('mouseup', endPosition);
     canvas.addEventListener('mousemove', draw);
+
+    canvas.addEventListener('touchstart', startPosition);
+    canvas.addEventListener('touchend', endPosition);
+    canvas.addEventListener('touchmove', handleTouch);
 
     const clearBtn = document.getElementById('clearBtn');
     if (clearBtn) {
@@ -150,6 +168,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (refreshBtn) {
       refreshBtn.addEventListener('click', clearCanvas);
     }
+    showPlaceholder();
+    canvas.addEventListener('mousedown', () => {
+      hidePlaceholder();
+    });
+    canvas.addEventListener('touchstart', () => {
+      hidePlaceholder();
+    });
+
   } 
+
   /* [E]2024.08.21 Sign area */
 });
