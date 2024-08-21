@@ -65,8 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     popCloseBtnFn(document.querySelectorAll(".popClose"));
     popupOpenBtnFn(document.querySelectorAll(".popOpen"));
   }
-  pop ? popFn() : false;
-  */
+  pop ? popFn() : false;  */
   /* [S]2024.0821 Sign area */
   const canvas = document.getElementById('signCanvas');
   if (canvas) {
