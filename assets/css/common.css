@@ -1876,3 +1876,45 @@ button .btn_img {
   pointer-events: none;
   user-select: none;
 }
+
+
+
+/* [HJ]20240822 */
+/*icon txt*/
+.icon_txt {
+  padding-left: 20px;
+}
+.icon_txt::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
+}
+.icon_txt.icon_car::before {
+  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+}
+.icon_txt.icon_user::before {
+  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+}
+.icon_txt.icon-group::before {
+  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+}
+.btn_sub + .sort_sub {
+  margin-top: 36px;
+}
+
+/*팝업 내 서명 Input 100% 사이즈*/
+.admin_wrap .page_popup input[type="text"].sort_full {
+  width: 100%;
+  max-width: unset;
+}
+.consent-sign {
+  display: flex;
+}
+.consent-sign .sign_name {
+  margin-left: auto;
+}
