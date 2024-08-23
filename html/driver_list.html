@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승자 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep select">
+            <a class="btn_menu">DASHBOARD</a>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승자 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승자 명단</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승자 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승 동의서</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">차량 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">차량 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">운행 이력</a></li>
+              <li class="list_2dep"><a class="btn_menu">연번 관리</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 이슈관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">이슈 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">이슈 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">운영 정보 공유</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">코스정보 공유</a></li>
+              <li class="list_2dep"><a class="btn_menu">DEMS 매뉴얼</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">리포트</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승리포트</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">초대장 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">초대장 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">초대장 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">STAFF 알림</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">공지사항</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사FEED</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <div class="admin_title">
+            <h2>시승자 명단</h2>
+            <div class="admin_title_sub">
+              <select name="product_name" class="sort_select">
+                <option>2024년 5월 1일</option>
+                <option>2024년 4월 30일</option>
+                <option>2024년 4월 29일</option>
+                <option>2024년 4월 28일</option>
+                <option>2024년 4월 27일</option>
+                <option>2024년 4월 26일</option>
+              </select>
+              <button class="btn_default">업데이트</button>
+              <p>(마지막 업데이트 : 2024.05.01 14:00:51)</p>
+            </div>
+          </div>
+          <table class="table_detail">
+            <tr>
+              <th>계획 인원</th>
+              <td>100명 (운전자 90명, 동반자 10명)</td>
+              <th>차량 미배정</th>
+              <td>1명</td>
+            </tr>
+            <tr>
+              <th>참석인원</th>
+              <td>10명 (운전자 4명, 동반자 6명)</td>
+              <th>불참인원</th>
+              <td>운전자 1명, 동반자 2명</td>
+            </tr>
+          </table>
+          <div class="btn_wrap btn_sub">
+            <div>
+              <button class="btn_default">양식 다운로드</button><!--24.08.22 엑셀 아이콘 필요-->
+              <button class="btn_default">데이터 업로드</button><!--24.08.22 엑셀 아이콘 필요-->
+            </div>
+          </div>
+          <div class="sort_wrap sort_sub">
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_half">
+                <div>
+                  <p class="sort_title">그룹</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="전체">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">시승자 성명</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="전체">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_half">
+                <div>
+                  <p class="sort_title">배차상태</p>
+                  <div class="sort_con">
+                    <select name="product_name" class="sort_select">
+                      <option>전체</option>
+                      <option>1</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">참석확인</p>
+                  <div class="sort_con">
+                    <select name="product_name" class="sort_select">
+                      <option>전체</option>
+                      <option>1</option>
+                    </select>
+                    <button class="btn_default">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrap btn_collect btn_between">
+            <div>
+              <span class="text_bold">A그룹 (09:00 ~ 11:00)</span>
+              <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
+              <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
+              <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
+            </div>
+            <div>
+              <button class="btn_default">+ 시승자 등록</button>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="202px">그룹</th>
+                <th width="202px">소속</th>
+                <th width="130px">성명</th>
+                <th width="170px">시승시간</th>
+                <th width="185px">배정차량</th>
+                <th width="161px">참석확인</th>
+                <th width="115px">계획 인원</th>
+                <th width="115px">확인 인원</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>글로벌 모토뉴스</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>미배정</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1, 동반자1</td>
+                <td>미확인</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td>완료 <span class="btn_wrap"><button class="btn_fit btn_border">취소</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td>완료 <span class="btn_wrap"><button class="btn_fit btn_border">취소</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+          <div class="btn_wrap btn_collect btn_between">
+            <div>
+              <span class="text_bold">B그룹 (09:00 ~ 11:00)</span>
+              <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
+              <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
+              <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="202px">그룹</th>
+                <th width="202px">소속</th>
+                <th width="130px">성명</th>
+                <th width="170px">시승시간</th>
+                <th width="185px">배정차량</th>
+                <th width="161px">참석확인</th>
+                <th width="115px">계획 인원</th>
+                <th width="115px">확인 인원</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>글로벌 모토뉴스</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>미배정</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1, 동반자1</td>
+                <td>미확인</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+          <div class="btn_wrap btn_collect btn_between">
+            <div>
+              <span class="text_bold">C그룹 (09:00 ~ 11:00)</span>
+              <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
+              <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
+              <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="202px">그룹</th>
+                <th width="202px">소속</th>
+                <th width="130px">성명</th>
+                <th width="170px">시승시간</th>
+                <th width="185px">배정차량</th>
+                <th width="161px">참석확인</th>
+                <th width="115px">계획 인원</th>
+                <th width="115px">확인 인원</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>글로벌 모토뉴스</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>미배정</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1, 동반자1</td>
+                <td>미확인</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+          <div class="btn_wrap btn_collect btn_between">
+            <div>
+              <span class="text_bold">D그룹 (09:00 ~ 11:00)</span>
+              <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
+              <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
+              <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
+            </div>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="202px">그룹</th>
+                <th width="202px">소속</th>
+                <th width="130px">성명</th>
+                <th width="170px">시승시간</th>
+                <th width="185px">배정차량</th>
+                <th width="161px">참석확인</th>
+                <th width="115px">계획 인원</th>
+                <th width="115px">확인 인원</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>글로벌 모토뉴스</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>미배정</td>
+                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td>운전자1, 동반자1</td>
+                <td>미확인</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td>완료 <span class="btn_wrap"><button class="btn_fit btn_border">취소</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="text_bold">A그룹(뉴미)</td>
+                <td>국민일보</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
+                <td>09:00 ~ 12:00</td>
+                <td>1호차, (257도 5430)</td>
+                <td>완료 <span class="btn_wrap"><button class="btn_fit btn_border">취소</button></span></td>
+                <td>운전자1</td>
+                <td>운전자1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+
+          <!-- 팝업: 체크인 -->
+          <div class="popup_wrap" id="check_in">
+            <div class="admin_popup">
+              <h3>체크인</h3>
+              <select name="product_name" class="sort_select">
+                <option>동반자수 선택</option>
+                <option>1</option>
+              </select>
+              <button class="btn_middle btn_white popClose">취소</button>
+              <button class="btn_middle btn_sky popClose popOpen" data-pop="confirm">확인</button>
+            </div>
+          </div>
+
+          <!-- 팝업: 시승동의서 작성여부 -->
+          <div class="popup_wrap" id="confirm">
+            <div class="admin_popup">
+              <h3>시승동의서 작성여부</h3>
+              <select name="product_name" class="sort_select">
+                <option>시승동의서 작성여부 선택</option>
+                <option>작성</option>
+                <option>미작성</option>
+              </select>
+              <button class="btn_middle btn_white popClose">취소</button>
+              <button class="btn_middle btn_sky popClose popOpen" data-pop="consentForm">확인</button>
+            </div>
+          </div>
+
+          <!-- 팝업: 시승서비스 이용 동의서 -->
+          <!-- 24.08.22 단독으로 열었을 경우 이상 없으나, popup 다음으로 열었을 경우 서명란 canvas 영역의 높이가 제대로 잡히지 않는 이슈가 있습니다.-->
+          <div class="popup_wrap" id="consentForm">
+            <div class="page_popup">
+              <div class="box_title">
+                <h3>시승서비스 이용 동의서</h3>
+              </div>
+              <div class="btn_wrap btn_end">
+                <button class="btn_download">PDF저장</button>
+              </div>
+              <div class="form_img">
+                <img src="https://placehold.co/600x800?text=consent form\narea">
+              </div>
+              <div class="form_input_wrap">
+                <p>본인은 동의서 내용을 상세히 읽고 충분히 이해하였으며, 시승 동의서에 동의합니다.</p>
+                <div class="form_input">
+                  <div class="input_type_radio">
+                    <input type="radio" name="agreement" value="agreement" id="agreement">
+                    <label for="agreement">동의함</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="agreement" value="no_agreement" id="no_agreement">
+                    <label for="no_agreement">동의 안함</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sort_wrap">                
+                <div class="sort_con">
+                  <div class="sort_double">
+                    <input type="text" class="sort_text sort_full" placeholder="서명 입력">
+                  </div>
+                </div>
+              </div>
+              <div class="sign_wrap">
+                <canvas id="signCanvas"></canvas>
+                <div class="sign_placeholder">서명해주세요.</div>
+                <div class="ctrl_sign">
+                  <button id="clearBtn">지우기</button>
+                  <!-- <button id="saveBtn">저장하기</button> -->
+                  <button id="refreshBtn">새로고침</button>
+                </div>
+              </div>
+              <div class="btn_wrap btn_center">
+                <button class="btn_middle btn_sky popClose popOpen" data-pop="check_in_complete">확인</button>
+              </div>
+              <button class="btn_close popClose"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+
+          <!-- 팝업: 체크인 완료 -->
+          <div class="popup_wrap" id="check_in_complete">
+            <div class="admin_popup">
+              <h3>체크인이 완료되었습니다.</h3>
+              <button class="btn_middle btn_sky popClose">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

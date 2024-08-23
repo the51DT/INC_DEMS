@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승차량 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep select"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <h2 class="admin_title">운행이력</h2>
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_half">
+                <div>
+                  <p class="sort_title">연번</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="연번 입력">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">차량번호</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="차량번호 입력">
+                    <button class="btn_default">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrap btn_collect btn_between">
+            <span class="text_bold">검색결과: <span>1호차, 257도 5487, GV80, 3.5 가솔린 터보 5인승 22인치 쿠페 디자인 셀렉션2 (카본 내장재) 4WD, 비크 블랙, 블랙모노+그레이스티치</span></span>
+          </div>
+          <table class="table_list">
+            <thead>
+              <tr>
+                <th width="30px">No</th>
+                <th width="140px">차량번호</th>
+                <th width="250px">차대번호</th>
+                <th width="230px">차량명</th>
+                <th width="200px">일시</th>
+                <th width="200px">상태확인자</th>
+                <th width="370px">현재 상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8</td>
+                <td>257도5487</td>
+                <td>1111111111111111</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>이재호 (더피프티원)</td>
+                <td>미배정</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>257도5487</td>
+                <td>2222222222222222</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>송기철 (이노션)</td>
+                <td>시승대기</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>257도5487</td>
+                <td>3333333333333333</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>김진호 (현대오토에버)</td>
+                <td>시승중</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>257도5487</td>
+                <td>…</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>이재호 (더피프티원)</td>
+                <td>주유/충전중</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>257도5487</td>
+                <td>…</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>이재호 (더피프티원)</td>
+                <td>시승종료</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>257도5487</td>
+                <td>…</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>송기철 (이노션)</td>
+                <td>반납완료</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>257도5487</td>
+                <td>…</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>김진호 (현대오토에버)</td>
+                <td>미배정</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>257도5487</td>
+                <td>…</td>
+                <td>GV80</td>
+                <td>2024.08.01 20:10</td>
+                <td>이재호 (더피프티원)</td>
+                <td>미배정</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          <div class="table_page">
+            <div class="page_control">
+              <button class="btn_page_prev"><span class="hidden">이전</span></button>
+              <button class="btn_page">1</button>
+              <button class="btn_page">2</button>
+              <button class="btn_page">3</button>
+              <sapn>...</sapn>
+              <button class="btn_page">8</button>
+              <button class="btn_page">9</button>
+              <button class="btn_page">10</button>
+              <button class="btn_page_next"><span class="hidden">다음</span></button>
+            </div>
+          </div>
+
+          <div class="popup_wrap" id="consentForm">
+            <div class="page_popup">
+              <div class="box_title">
+                <h3>제네시스 시승동의서</h3>
+              </div>
+              <div class="btn_wrap btn_end">
+                <button class="btn_download">PDF저장</button>
+              </div>
+              <div class="form_img">
+                <img src="https://placehold.co/600x800?text=consent form\narea">
+              </div>
+              <div class="form_input_wrap">
+                <p>본인은 동의서 내용을 상세히 읽고 충분히 이해하였으며, 시승 동의서에 동의합니다.</p>
+                <div class="form_input">
+                  <div class="input_type_radio">
+                    <input type="radio" name="agreement" value="agreement" id="agreement" checked>
+                    <label for="agreement">동의함</label>
+                  </div>
+                  <div class="input_type_radio">
+                    <input type="radio" name="agreement" value="no_agreement" id="no_agreement">
+                    <label for="no_agreement">동의 안함</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sign_wrap">
+                <canvas id="signCanvas"></canvas>
+                <div class="sign_placeholder">서명해주세요.</div>
+                <div class="ctrl_sign">
+                  <button id="clearBtn">지우기</button>
+                  <!-- <button id="saveBtn">저장하기</button> -->
+                  <button id="refreshBtn">새로고침</button>
+                </div>
+              </div>
+              <p class="consent-sign">서명일자 <span>2024.08.01 08:34</span><span class="text_bold sign_name">더피프티원 이재호</span></p>
+              <div class="btn_wrap btn_center">
+                <button class="btn_middle btn_sky popClose">확인</button>
+              </div>
+              <button class="btn_close popClose"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
