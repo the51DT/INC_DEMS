@@ -1990,7 +1990,7 @@ button .btn_img {
 .dash_gage::before {
   content: "";
   display: block;
-  width: 20%;
+  width: var(--gage);
   height: 10px;
   background-color: #597eff;
 }
