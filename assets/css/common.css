@@ -52,6 +52,9 @@
   width: 30px;
   border-radius: 100%;
 }
+.header_admin .header_right p {
+  font-size: 12px;
+}
 
 .admin .container {
   position: relative;
@@ -87,9 +90,9 @@
   position: relative;
   display: block;
   padding: 10px 22px;
-  font-size: 12px;
+  font-size: 14px;
   color: #2C3238;
-  line-height: 18px;
+  line-height: 140%;
 }
 .admin .lnb_admin .select .btn_menu:before {
   content: '';
@@ -111,7 +114,7 @@
 }
 .admin .lnb_admin .list_2dep .btn_menu {
   padding: 8px 0 8px 41px;
-  font-size: 11px;
+  font-size: 13px;
   color: #7C7C7C;
 }
 .admin .lnb_admin .list_2dep .btn_menu:hover {
@@ -130,7 +133,7 @@
   font-weight: 700;
   padding-bottom: 32px;
   margin-bottom: 32px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #999;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -194,10 +197,12 @@
 .admin_box {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
   padding: 28px;
   border-radius: 8px;
   background: #fff;
+}
+.login_wrap .admin_box {
+  max-width: 500px;
 }
 .admin_box_side {
   flex-shrink: 0;
@@ -288,7 +293,7 @@
 }
 .box_title h3 {
   align-self: center;
-  font-size: 18px;
+  font-size: 26px;
 }
 .box_title .btn_fit {
   margin-left: auto;
@@ -333,7 +338,14 @@
 .btn_caption {
   margin-left: 20px;
 }
-.requir::before {
+.requir::after {
+  content: "*";
+  color: #ff5353;
+}
+.caption.requir::after {
+  content: "";
+}
+.caption.requir::before {
   content: "*";
   color: #ff5353;
 }
@@ -600,9 +612,9 @@
   width: 314px;
   background-color: #FFF;
 }
-/* .admin_wrap .input_type_file input[type="file"] {
+.admin_wrap .input_type_file input[type="file"] {
   display: none;
-} */
+}
 .admin_wrap .input_type_file .input_type_file_button {
   max-width: 120px;
   padding: 13px 20px;
@@ -694,9 +706,12 @@
   padding-bottom: 20px;
   flex-wrap: wrap;
   width: 100%;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #999;
   overflow-x: overlay;
   overflow-y: hidden;
+}
+.admin_box .sort_wrap {
+  border-bottom: 1px solid #e8e8e8;
 }
 .sort_wrap::-webkit-scrollbar {
   height: 8px;
@@ -1060,6 +1075,11 @@
   font-weight: 700;
   color: #1e1e1e;
 }
+.btn_middle.btn_black {
+  background: #1e1e1e;
+  border: none;
+  color: #fff;
+}
 .btn_small {
   min-width: 70px;
   padding: 8px 12px;
@@ -1104,6 +1124,9 @@ button .btn_img {
 .sort_con .btn_default {
   width: auto;
   padding: 13px 16px;
+}
+.sort_con .btn_default.btn_full {
+  width: 100%;
 }
 .btn_sky {
   border: none;
@@ -1292,7 +1315,7 @@ button .btn_img {
   text-align: center;
 }
 .admin_popup h3 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
 }
 .admin_popup h3 + button {
@@ -1490,10 +1513,10 @@ button .btn_img {
 }
 .table_list td .btn_wrap {
   display: inline-block;
-  margin-left: 6px;
+  margin-left: 20px;
 }
 .table_list td .btn_wrap button + button {
-  margin-left: 2px;
+  margin-left: 12px;
 }
 .table_list.table_manager {
   margin-top: 10px;
@@ -1513,7 +1536,12 @@ button .btn_img {
 }
 .table_list.table_manager .table_manager_input {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.table_list.table_manager .table_manager_input .input_type_radio + .input_type_radio,
+.table_list.table_manager .table_manager_input .input_type_check + .input_type_check {
+  margin-left: 0;
 }
 .table_list.table_manager tbody td:first-child,
 .table_list.table_manager tbody td:last-child {
@@ -1524,6 +1552,7 @@ button .btn_img {
 }
 .caption_area li {
   list-style: disc inside;
+  font-size: 12px;
 }
 .caption_area li + li {
   margin-top: 12px;
@@ -1753,6 +1782,9 @@ button .btn_img {
   margin-bottom: 40px;
   text-align: center;
 }
+.login_wrap .login_title .login_logo {
+  font-size: 48px;
+}
 .login_wrap .login_sub {
   margin-top: 30px;
   text-align: center;
@@ -1917,4 +1949,141 @@ button .btn_img {
 }
 .consent-sign .sign_name {
   margin-left: auto;
+}
+
+.dash_title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.dash_title button {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.dash_title button .btn_icon {
+  height: 14px;
+}
+.dash_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  height: 190px;
+}
+.dash_box .dash_coulmn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.dash_box .dash_coulmn strong {
+  font-size: 36px;
+}
+.dash_gage {
+  width: 200px;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+.dash_gage::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 10px;
+  background-color: #597eff;
+}
+.dash_gage.gage_red::before {
+  background-color: #ff5353;
+}
+.dash_link li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 14px;
+}
+.dash_link li + li {
+  margin-top: 16px;
+}
+.dash_link li::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #000;
+}
+.dash_link li a {
+  max-width: 100%;
+}
+.dash_link li span:first-child {
+  width: 135px;
+}
+.dash_link li span:last-child {
+  text-align: center;
+  flex-grow: 1;
+}
+.dash_row {
+  display: flex;
+  gap: 12px;
+}
+.dash_flex {
+  display: flex;
+  gap: 24px;
+}
+.dash_flex div:last-child {
+  flex-grow: 1;
+  height: 100%;
+}
+.dash_border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: calc(20% - 6px);
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.dash_border strong {
+  font-size: 20px;
+}
+.dash_table_wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+.dash_table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+  border: 1px solid #7C7C7C;
+  background: #FFF;
+}
+.dash_table th {
+  height: 53px;
+  padding: 12px;
+  background: #efefef;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #7C7C7C;
+}
+.dash_table td {
+  height: 53px;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #7C7C7C;
+}
+.dash_table .accent {
+  background-color: #ffa800;
+}
+.dash_table .check::before {
+  content: "○";
+  color: #ff5353;
+  font-size: 34px;
+  font-weight: 700;
 }
