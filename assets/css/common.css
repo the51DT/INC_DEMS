@@ -1993,7 +1993,7 @@ button .btn_img {
 }
 .dash_gage {
   width: 100%;
-  min-width: 80px;
+  min-width: 100px;
   height: 10px;
   background-color: #f0f0f0;
 }
@@ -2038,6 +2038,7 @@ button .btn_img {
   flex-shrink: 0;
 }
 .dash_link li span:last-child {
+  width: 100%;
   min-width: 36px;
   text-align: center;
   flex-grow: 1;
