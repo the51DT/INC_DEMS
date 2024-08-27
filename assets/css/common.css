@@ -125,7 +125,7 @@
 }
 
 .admin_wrap {
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #1e1e1e;
   padding: 40px 32px;
 }
@@ -316,7 +316,7 @@
   border-bottom: 2px solid #00bce5;
 }
 .admin_wrap button {
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .line {
   margin: 20px 0;
@@ -400,7 +400,7 @@
 }
 
 .admin_wrap input {
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .admin_wrap select {
   width: 230px;
@@ -408,7 +408,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background-image: url("../img/icon/select_arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
@@ -463,7 +463,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 13px;
   max-width: 474px;
   width: 100%;
@@ -554,7 +554,7 @@
   border-radius: 4px;
   font-size: 13px;
   line-height: 12px;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   text-align: left;
 }
 .admin_wrap input[type="date"]::-webkit-calendar-picker-indicator {
@@ -646,7 +646,7 @@
   border: 1px solid #1e1e1e;
   border-radius: 4px;
   background: #fff;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
   font-weight: 700;
 }
@@ -657,7 +657,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   line-height: 13px;
   width: 100%;
 }
@@ -681,7 +681,7 @@
   padding: 20px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
   color: #1e1e1e;
 }
@@ -1311,7 +1311,7 @@ button .btn_img {
   border-radius: 16px;
   background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   text-align: center;
 }
 .admin_popup h3 {
@@ -1338,7 +1338,7 @@ button .btn_img {
   padding: 36px 32px 40px;
   border-radius: 16px;
   background: #f5f7fa;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .page_popup::-webkit-scrollbar {
   width: 1px;
@@ -1379,7 +1379,7 @@ button .btn_img {
   padding: 36px 24px 40px;
   border-radius: 16px;
   background: #fff;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .tooltip_popup h3 {
   display: flex;
@@ -1427,7 +1427,7 @@ button .btn_img {
 }
 
 .admin_wrap table {
-  font-family: "NanumSquare", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .table_checklist {
   width: 100%;
@@ -1617,7 +1617,7 @@ button .btn_img {
   margin-top: 0 !important;
 }
 .table_detail th {
-  width: 160px;
+  width: 15%;
   height: 53px;
   padding: 20px;
   background: #efefef;
@@ -1653,6 +1653,7 @@ button .btn_img {
   margin-top: 8px;
 }
 .table_detail td {
+  width: 35%;
   height: 53px;
   padding: 20px;
   text-align: right;
@@ -1684,6 +1685,9 @@ button .btn_img {
 .table_detail_gray td {
   text-align: left;
   background-color: #F5F7FA66;
+}
+.table_detail + .sort_sub {
+  margin-top: 24px;
 }
 
 .text_field {
@@ -1969,8 +1973,9 @@ button .btn_img {
 .dash_box {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  height: 190px;
+  gap: 28px;
+  min-height: 215px;
+  height: 100%;
 }
 .dash_box .dash_coulmn {
   display: flex;
@@ -1978,31 +1983,40 @@ button .btn_img {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  text-align: center;
+}
+.dash_box .dash_coulmn:nth-child(2) {
+  flex-grow: 1;
 }
 .dash_box .dash_coulmn strong {
   font-size: 36px;
 }
 .dash_gage {
-  width: 200px;
+  width: 100%;
+  min-width: 80px;
   height: 10px;
   background-color: #f0f0f0;
 }
 .dash_gage::before {
   content: "";
   display: block;
-  width: var(--gage);
+  width: 0;
   height: 10px;
   background-color: #597eff;
+  animation: dashGage 0.5s ease-in-out forwards;
 }
 .dash_gage.gage_red::before {
   background-color: #ff5353;
+}
+@keyframes dashGage {
+  0% {width: 0;}
+  100% {width: var(--gage);}
 }
 .dash_link li {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  height: 14px;
+  gap: 8px;
 }
 .dash_link li + li {
   margin-top: 16px;
@@ -2014,19 +2028,23 @@ button .btn_img {
   height: 3px;
   border-radius: 100%;
   background-color: #000;
+  flex-shrink: 0;
 }
 .dash_link li a {
   max-width: 100%;
 }
 .dash_link li span:first-child {
   width: 135px;
+  flex-shrink: 0;
 }
 .dash_link li span:last-child {
+  min-width: 36px;
   text-align: center;
   flex-grow: 1;
 }
 .dash_row {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 .dash_flex {
@@ -2045,6 +2063,7 @@ button .btn_img {
   gap: 16px;
   width: calc(20% - 6px);
   height: 100%;
+  max-height: 150px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -2086,4 +2105,9 @@ button .btn_img {
   color: #ff5353;
   font-size: 34px;
   font-weight: 700;
+}
+
+.text_logo {
+  height: 14px;
+  margin-right: 8px;
 }

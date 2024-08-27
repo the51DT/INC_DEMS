@@ -96,6 +96,10 @@
               <button class="btn_default">업데이트</button>
               <p>(마지막 업데이트 : 2024.05.01 14:00:51)</p>
             </div>
+            <div class="btn_wrap">
+              <button class="btn_default">양식 다운로드</button><!--24.08.22 엑셀 아이콘 필요-->
+              <button class="btn_default">데이터 업로드</button><!--24.08.22 엑셀 아이콘 필요-->
+            </div>
           </div>
           <table class="table_detail">
             <tr>
@@ -111,12 +115,6 @@
               <td>운전자 1명, 동반자 2명</td>
             </tr>
           </table>
-          <div class="btn_wrap btn_sub">
-            <div>
-              <button class="btn_default">양식 다운로드</button><!--24.08.22 엑셀 아이콘 필요-->
-              <button class="btn_default">데이터 업로드</button><!--24.08.22 엑셀 아이콘 필요-->
-            </div>
-          </div>
           <div class="sort_wrap sort_sub">
             <div class="sort_con_double">
               <div class="sort_wrap sort_half">
@@ -191,7 +189,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>미배정</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
@@ -262,7 +260,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>미배정</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
@@ -273,7 +271,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>1호차, (257도 5430)</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
@@ -284,7 +282,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>1호차, (257도 5430)</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
@@ -333,7 +331,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>미배정</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
@@ -344,7 +342,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>1호차, (257도 5430)</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
@@ -355,7 +353,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>1호차, (257도 5430)</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
@@ -404,7 +402,7 @@
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
                 <td>09:00 ~ 12:00</td>
                 <td>미배정</td>
-                <td><span class="btn_wrap"><button class="btn_fit popOpen" data-pop="check_in">체크인</button></span></td>
+                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
@@ -498,6 +496,7 @@
                     <label for="no_agreement">동의 안함</label>
                   </div>
                 </div>
+                <input type="text" class="sort_text sort_full" placeholder="서명 입력">
               </div>
               <div class="sign_wrap">
                 <canvas id="signCanvas"></canvas>
