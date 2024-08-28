@@ -1548,6 +1548,10 @@ button .btn_img {
 .table_list.table_manager tbody td:last-child {
   padding-left: 20px;
 }
+.table_list input[type="text"] {
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
 .caption_area {
   margin: 16px 0;
 }
