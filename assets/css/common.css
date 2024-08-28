@@ -1432,35 +1432,23 @@ button .btn_img {
 }
 .table_checklist {
   width: 100%;
-  background-color: #FFF;
   font-size: 13px;
   border-collapse: collapse;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
 }
 .table_checklist thead {
-  color: #7c7c7c;
+  background-color: #efefef;
 }
 .table_checklist th {
   position: relative;
   line-height: 18px;
-  text-align: left;
-  padding: 20px 0;
-  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #7C7C7C;
   vertical-align: middle;
 }
-.table_checklist th:first-child,
-.table_checklist th:last-child {
-  padding: 20px;
-}
 .table_checklist td {
-  line-height: 18px;
-  padding: 20px 0;
-  border-bottom: 1px solid #e8e8e8;
-}
-.table_checklist td:first-child,
-.table_checklist td:last-child {
   padding: 20px;
+  border: 1px solid #7C7C7C;
 }
 .table_scroll {
   height: 154px;
@@ -1516,7 +1504,7 @@ button .btn_img {
   display: inline-block;
   margin-left: 20px;
 }
-.table_list td .btn_wrap:first-child {
+.table_list td .btn_wrap:only-child {
   margin-left: 0;
 }
 .table_list td .btn_wrap button + button {
