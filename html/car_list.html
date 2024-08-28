@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승차량 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving Experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">DASHBOARD</a>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승자 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승자 명단</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승자 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승 동의서</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep select"><a class="btn_menu">차량 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">차량 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">운행 이력</a></li>
+              <li class="list_2dep"><a class="btn_menu">연번 관리</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 이슈관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">이슈 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">이슈 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">운영 정보 공유</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">코스정보 공유</a></li>
+              <li class="list_2dep"><a class="btn_menu">DEMS 매뉴얼</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">리포트</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승리포트</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">초대장 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">초대장 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">초대장 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">STAFF 알림</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">공지사항</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사FEED</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <div class="admin_title">
+            <h2>차량 목록</h2>
+            <div class="btn_wrap">
+              <button class="btn_default">양식 다운로드</button>
+              <button class="btn_default">데이터 업로드</button>
+            </div>
+          </div>
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <div class="sort_con_double">
+                  <div class="sort_wrap sort_flex">
+                    <div>
+                      <p class="sort_title">차량명</p>
+                      <div class="sort_con">
+                        <select name="car_name" class="sort_select">
+                          <option>전체</option>
+                          <option>1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="sort_title">차량번호</p>
+                      <div class="sort_con">
+                        <input type="text" placeholder="전체">
+                      </div>
+                    </div>
+                    <div>
+                      <p class="sort_title">차대번호</p>
+                      <div class="sort_con">
+                        <input type="text" placeholder="전체">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sort_con_double">
+                  <div class="sort_wrap sort_flex">
+                    <div>
+                      <p class="sort_title">입고확인</p>
+                      <div class="sort_con">
+                        <select name="product_name" class="sort_select">
+                          <option>전체</option>
+                          <option>1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="sort_title">차랑상태</p>
+                      <div class="sort_con">
+                        <select name="product_name" class="sort_select">
+                          <option>전체</option>
+                          <option>1</option>
+                        </select>
+                        <button class="btn_default btn_caption">검색</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <p class="sort_result">총 80대의 차량이 검색되었습니다</p>
+            </div>
+            <div class="sort_con_double">
+              <div class="dash_table_wrap">
+                <table class="dash_table">
+                  <thead>
+                    <tr>
+                      <th rowspan="3" width="3%">No.</th>
+                      <th rowspan="3" width="7%">차량명</th>
+                      <th rowspan="3" width="7%">차량번호</th>
+                      <th rowspan="3" width="7%">차대번호</th>
+                      <th colspan="2">입고확인</th>
+                      <th colspan="11">차량상태</th>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" width="3%">미확인</th>
+                      <th rowspan="2" width="3%">확인</th>
+                      <th rowspan="2" width="3%">미배정</th>
+                      <th rowspan="2" width="3%">시승대기</th>
+                      <th colspan="5" class="accent">시승중</th>
+                      <th rowspan="2" width="3%">충전/주유중</th>
+                      <th rowspan="2" width="3%">정비중</th>
+                      <th rowspan="2" width="3%">시승종료</th>
+                      <th rowspan="2" width="3%">반납완료</th>
+                    </tr>
+                    <tr>
+                      <th width="3%" class="accent">시승시작<br>(출발)</th>
+                      <th width="3%" class="accent">기착지<br>(도착)</th>
+                      <th width="3%" class="accent">시승중<br>주유/충전</th>
+                      <th width="3%" class="accent">기착지<br>(출발)</th>
+                      <th width="3%" class="accent">시승종료<br>(도착)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>GV80</td>
+                      <td>A-01</td>
+                      <td>487</td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store1" value="store" id="store1_store">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store1" value="no_store" id="store1_no">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-1" id="state1-1">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-2" id="state1-2">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-3" id="state1-3">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-4" id="state1-4">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-5" id="state1-5">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-6" id="state1-6">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-7" id="state1-7">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-8" id="state1-8">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-9" id="state1-9">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-10" id="state1-10">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state1" value="state-11" id="state1-11">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>GV80</td>
+                      <td>B-01</td>
+                      <td>488</td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store2" value="store" id="store2_store">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store2" value="no_store" id="store2_no">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-1" id="state2-1">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-2" id="state2-2">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-3" id="state2-3">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-4" id="state2-4">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-5" id="state2-5">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-6" id="state2-6">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-7" id="state2-7">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-8" id="state2-8">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-9" id="state2-9">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-10" id="state2-10">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state2" value="state-11" id="state2-11">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>GV80</td>
+                      <td>C-01</td>
+                      <td>489</td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store3" value="store" id="store3_store">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="store3" value="no_store" id="store3_no">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-1" id="state3-1">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-2" id="state3-2">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-3" id="state3-3">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-4" id="state3-4">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-5" id="state3-5">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-6" id="state3-6">
+                        </div>
+                      </td>
+                      <td class="accent">
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-7" id="state3-7">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-8" id="state3-8">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-9" id="state3-9">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-10" id="state3-10">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
+                          <input type="radio" name="state3" value="state-11" id="state3-11">
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="btn_wrap btn_sub">
+                <button class="btn_default">+ 차량 등록</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

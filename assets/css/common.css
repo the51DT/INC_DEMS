@@ -1005,6 +1005,7 @@
 .btn_sub {
   margin-top: 20px;
   justify-content: end;
+  width: 100%;
 }
 .btn_sub + .admin_box {
   margin-top: 60px;
@@ -2107,8 +2108,27 @@ button .btn_img {
   font-size: 34px;
   font-weight: 700;
 }
+.dash_table .input_type_radio {
+  justify-content: center;
+}
 
 .text_logo {
   height: 14px;
   margin-right: 8px;
+}
+
+.sort_flex {
+  gap: 26px;
+}
+.sort_flex > div {
+  display: flex;
+}
+.sort_flex .sort_con input,
+.sort_flex .sort_con select {
+  width: 200px;
+}
+.sort_result {
+  font-size: 20px;
+  text-align: center;
+  margin: 36px auto;
 }
