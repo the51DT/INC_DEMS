@@ -1516,6 +1516,9 @@ button .btn_img {
   display: inline-block;
   margin-left: 20px;
 }
+.table_list td .btn_wrap:first-child {
+  margin-left: 0;
+}
 .table_list td .btn_wrap button + button {
   margin-left: 12px;
 }

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승차량 체크리스트</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving Experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/images/profile.png">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">DASHBOARD</a>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승자 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승자 명단</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승자 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승 동의서</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">차량 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">차량 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">운행 이력</a></li>
+              <li class="list_2dep"><a class="btn_menu">차량번호 관리</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승차량 체크리스트</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep select"><a class="btn_menu">체크리스트</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">운영 정보 공유</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">코스정보 공유</a></li>
+              <li class="list_2dep"><a class="btn_menu">DEMS 매뉴얼</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">리포트</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승리포트</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">초대장 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">초대장 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">초대장 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">STAFF 알림</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">공지사항</a></li>
+              <li class="list_2dep"><a class="btn_menu">행사FEED</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <div class="admin_title">
+            <h2>체크리스트</h2>
+            <div class="btn_wrap">
+              <button class="btn_default">다운로드</button>
+            </div>
+          </div>
+          <div class="sort_wrap">
+            <div class="sort_con_double">
+              <div class="sort_wrap sort_flex">
+                <div>
+                  <p class="sort_title">이슈여부</p>
+                  <div class="sort_con">
+                    <select name="issue" class="sort_select">
+                      <option>전체</option>
+                      <option>1</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">차량번호</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="차량번호 입력">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">차대번호</p>
+                  <div class="sort_con">
+                    <input type="text" placeholder="차대번호 입력">
+                  </div>
+                </div>
+                <div>
+                  <p class="sort_title">담당자</p>
+                  <div class="sort_con">
+                    <select name="product_name" class="sort_select">
+                      <option>전체</option>
+                      <option>1</option>
+                    </select>
+                    <button class="btn_default btn_caption">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <table class="table_list">
+                <thead>
+                  <tr>
+                    <th width="40px">No</th>
+                    <th width="100px">차량명</th>
+                    <th width="100px">차량번호</th>
+                    <th width="100px">차대번호</th>
+                    <th width="200px">이슈체크 일시</th>
+                    <th width="200px">이슈체크 건수</th>
+                    <th width="200px">담당자</th>
+                    <th width="250px">체크리스트</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>GV80</td>
+                    <td>A-01</td>
+                    <td>311</td>
+                    <td>2024.08.01 10:31</td>
+                    <td>입고 (0), 시승(2), 반납(2)</td>
+                    <td>이재호 (더피프티원)</td>
+                    <td>
+                      <div class="btn_wrap">
+                        <button class="btn_fit btn_white">입고</button>
+                        <button class="btn_fit btn_white">시승</button>
+                        <button class="btn_fit btn_white">반납</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>GV80</td>
+                    <td>A-02</td>
+                    <td>311</td>
+                    <td>2024.08.01 10:31</td>
+                    <td>입고 (0), 시승(2), 반납(2)</td>
+                    <td>이재호 (더피프티원)</td>
+                    <td>
+                      <div class="btn_wrap">
+                        <button class="btn_fit btn_white">입고</button>
+                        <button class="btn_fit btn_white">시승</button>
+                        <button class="btn_fit btn_white">반납</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>80</td>
+                    <td>GV80</td>
+                    <td>D-99</td>
+                    <td>999</td>
+                    <td>2024.08.01 10:31</td>
+                    <td>0</td>
+                    <td>이재호 (더피프티원)</td>
+                    <td>
+                      <div class="btn_wrap">
+                        <button class="btn_fit btn_white">입고</button>
+                        <button class="btn_fit btn_white">시승</button>
+                        <button class="btn_fit btn_white">반납</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
