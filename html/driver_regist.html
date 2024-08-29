@@ -16,7 +16,7 @@
         <p>Driving Experience Management Solution</p>
       </div>
       <a class="header_right" href="#">
-        <img class="header_profile" src="../assets/img/images/profile.png">
+        <img class="header_profile" src="../assets/img/icon/profile.svg">
         <p>홍길동</p>
       </a>
     </header>
@@ -87,11 +87,9 @@
 
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title requir">그룹</p>
+                <p class="sort_title requir">팀</p>
                 <div class="sort_con">
-                  <select name="product_name" class="sort_select">
-                    <option>그룹선택</option>
-                  </select>
+                  <input type="text" placeholder="팀명칭 입력 ex) 뉴미디어, 방송, 유투브" >
                 </div>
               </div>
             </div>
@@ -100,9 +98,7 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">소속</p>
                 <div class="sort_con">
-                  <select name="product_name" class="sort_select">
-                    <option>소속선택</option>
-                  </select>
+                  <input type="text" placeholder="소속 입력 ex) 모터그래프, 채널A, 우파TV" >
                 </div>
               </div>
             </div>
@@ -111,19 +107,16 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">성명</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="성명을 입력해주세요" >
+                  <input type="text" placeholder="성명 입력" >
                 </div>
               </div>
             </div>
 
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title">시승일자</p>
+                <p class="sort_title requir">시승일자</p>
                 <div class="sort_con">
-                  <!-- <div class="sort_date">
-                    <input type="date">
-                  </div> -->
-                  <select name="product_name" class="sort_select">
+                  <select name="drive_date" class="sort_select">
                     <option>선택</option>
                   </select>
                 </div>
@@ -132,12 +125,9 @@
 
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title">시승시간</p>
+                <p class="sort_title requir">시승차수</p>
                 <div class="sort_con">
-                  <!-- <div class="sort_date">
-                    <input type="time">
-                  </div> -->
-                  <select name="product_name" class="sort_select">
+                  <select name="drive_round" class="sort_select">
                     <option>선택</option>
                   </select>
                 </div>
@@ -146,9 +136,9 @@
 
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title">동반자수</p>
+                <p class="sort_title requir">동반자수</p>
                 <div class="sort_con">
-                  <select name="product_name" class="sort_select">
+                  <select name="drive_with" class="sort_select">
                     <option>선택</option>
                   </select>
                 </div>
@@ -157,11 +147,12 @@
 
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title">배정차량</p>
+                <p class="sort_title">차량배정</p>
                 <div class="sort_con">
                   <select name="product_name" class="sort_select">
                     <option>선택</option>
                   </select>
+                  <span class="caption sort_caption">* 미배정 상태의 차량만 배정 가능합니다</span>
                 </div>
               </div>
             </div>

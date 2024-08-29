@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMS | 시승 행사 관리</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/common.js"></script>
+</head>
+<body>
+  <div class="admin">
+    <header class="header_admin">
+      <div class="header_left">
+        <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
+        <h1>DEMS</h1>
+        <p>Driving Experience Management Solution</p>
+      </div>
+      <a class="header_right" href="#">
+        <img class="header_profile" src="../assets/img/icon/profile.svg">
+        <p>홍길동</p>
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="lnb_admin">
+        <ul class="menu menu_1dep">
+          <li class="list_1dep">
+            <a class="btn_menu">시승 행사 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">진행/예정 행사</a></li>
+              <li class="list_2dep"><a class="btn_menu">종료된 행사</a></li>
+              <li class="list_2dep select"><a class="btn_menu">행사 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">시승 동의서 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">시승동의서 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">시승동의서 등록</a></li>
+            </ul>
+          </li>
+          <li class="list_1dep">
+            <a class="btn_menu">관리자 계정 관리</a>
+            <ul class="menu menu_2dep">
+              <li class="list_2dep"><a class="btn_menu">계정 목록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 등록</a></li>
+              <li class="list_2dep"><a class="btn_menu">계정 관리자 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contents_admin">
+        <div class="admin_wrap">
+          <h2 class="admin_title">행사 등록 2/3 (일자별 운영계획)</h2>
+
+          <div class="sort_wrap">
+            <div class="sort_column">
+              <div class="sort_title requir">일자별 운영계획</div>
+              <div class="sort_con">
+                <div class="sort_double">
+                  <div class="sort_price">
+                    <span class="input_caption text_bold">[시승 1일차]</span>
+                    <div class="sort_date">
+                      <input type="date">
+                    </div>
+                    <select name="round1" class="sort_select">
+                      <option>시승 회차 선택</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sort_double">
+                  <div class="sort_price">
+                    <span class="input_caption text_bold">[시승 2일차]</span>
+                    <div class="sort_date">
+                      <input type="date">
+                    </div>
+                    <select name="round2" class="sort_select">
+                      <option>시승 회차 선택</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sort_double">
+                  <div class="sort_price">
+                    <span class="input_caption text_bold">[시승 3일차]</span>
+                    <div class="sort_date">
+                      <input type="date">
+                    </div>
+                    <select name="round3" class="sort_select">
+                      <option>시승 회차 선택</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_wrap btn_collect btn_center">
+            <button class="btn_default btn_white">이전</button>
+            <button class="btn_default">다음</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

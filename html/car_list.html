@@ -16,7 +16,7 @@
         <p>Driving Experience Management Solution</p>
       </div>
       <a class="header_right" href="#">
-        <img class="header_profile" src="../assets/img/images/profile.png">
+        <img class="header_profile" src="../assets/img/icon/profile.svg">
         <p>홍길동</p>
       </a>
     </header>
@@ -163,8 +163,8 @@
                       <th rowspan="2" width="3%">시승대기</th>
                       <th colspan="5" class="accent">시승중</th>
                       <th rowspan="2" width="3%">충전/주유중</th>
+                      <th rowspan="2" width="3%">세차중</th>
                       <th rowspan="2" width="3%">정비중</th>
-                      <th rowspan="2" width="3%">시승종료</th>
                       <th rowspan="2" width="3%">반납완료</th>
                     </tr>
                     <tr>
@@ -183,17 +183,17 @@
                       <td>487</td>
                       <td>
                         <div class="input_type_radio">
+                          <input type="radio" name="store1" value="no_store" id="store1_no" checked>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_type_radio">
                           <input type="radio" name="store1" value="store" id="store1_store">
                         </div>
                       </td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="store1" value="no_store" id="store1_no">
-                        </div>
-                      </td>
-                      <td>
-                        <div class="input_type_radio">
-                          <input type="radio" name="state1" value="state-1" id="state1-1">
+                          <input type="radio" name="state1" value="state-1" id="state1-1" checked>
                         </div>
                       </td>
                       <td>
@@ -254,12 +254,12 @@
                       <td>488</td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="store2" value="store" id="store2_store">
+                          <input type="radio" name="store2" value="no_store" id="store2_no">
                         </div>
                       </td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="store2" value="no_store" id="store2_no">
+                          <input type="radio" name="store2" value="store" id="store2_store" checked>
                         </div>
                       </td>
                       <td>
@@ -269,7 +269,7 @@
                       </td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="state2" value="state-2" id="state2-2">
+                          <input type="radio" name="state2" value="state-2" id="state2-2" checked>
                         </div>
                       </td>
                       <td class="accent">
@@ -325,12 +325,12 @@
                       <td>489</td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="store3" value="store" id="store3_store">
+                          <input type="radio" name="store3" value="no_store" id="store3_no">
                         </div>
                       </td>
                       <td>
                         <div class="input_type_radio">
-                          <input type="radio" name="store3" value="no_store" id="store3_no">
+                          <input type="radio" name="store3" value="store" id="store3_store" checked>
                         </div>
                       </td>
                       <td>
@@ -345,7 +345,7 @@
                       </td>
                       <td class="accent">
                         <div class="input_type_radio">
-                          <input type="radio" name="state3" value="state-3" id="state3-3">
+                          <input type="radio" name="state3" value="state-3" id="state3-3" checked>
                         </div>
                       </td>
                       <td class="accent">

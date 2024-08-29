@@ -16,7 +16,7 @@
         <p>Driving Experience Management Solution</p>
       </div>
       <a class="header_right" href="#">
-        <img class="header_profile" src="../assets/img/images/profile.png">
+        <img class="header_profile" src="../assets/img/icon/profile.svg">
         <p>홍길동</p>
       </a>
     </header>
@@ -111,7 +111,7 @@
               <th>참석인원</th>
               <td>10명 (운전자 4명, 동반자 6명)</td>
               <th>불참인원</th>
-              <td>운전자 1명, 동반자 2명</td>
+              <td>3명 (운전자 1명, 동반자 2명)</td>
             </tr>
           </table>
           <div class="sort_wrap sort_sub">
@@ -120,7 +120,10 @@
                 <div>
                   <p class="sort_title">팀</p>
                   <div class="sort_con">
-                    <input type="text" placeholder="전체">
+                    <select name="product_name" class="sort_select">
+                      <option>전체</option>
+                      <option>1</option>
+                    </select>
                   </div>
                 </div>
                 <div>
@@ -166,7 +169,7 @@
             <thead>
               <tr>
                 <th width="30px">No</th>
-                <th width="202px">그룹</th>
+                <th width="202px">팀</th>
                 <th width="202px">소속</th>
                 <th width="130px">성명</th>
                 <th width="170px">시승시간</th>
@@ -179,55 +182,42 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td class="text_bold">뉴미디어</td>
                 <td>글로벌 모토뉴스</td>
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>미배정</td>
+                <td>[1차수] 09:00 ~ 12:00</td>
+                <td>A-01</td>
                 <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td>2</td>
+                <td class="text_bold">뉴미디어</td>
                 <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">조재환</a></span></td>
+                <td>[1차수] 09:00 ~ 12:00</td>
+                <td>A-02</td>
                 <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
-                <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
+                <td>3</td>
+                <td class="text_bold">뉴미디어</td>
+                <td>채널A</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">이민준</a></span></td>
+                <td>[1차수] 09:00 ~ 12:00</td>
+                <td>A-03</td>
                 <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
             </tbody>
           </table>
-          <div class="table_page">
-            <div class="page_control">
-              <button class="btn_page_prev"><span class="hidden">이전</span></button>
-              <button class="btn_page">1</button>
-              <button class="btn_page">2</button>
-              <button class="btn_page">3</button>
-              <sapn>...</sapn>
-              <button class="btn_page">8</button>
-              <button class="btn_page">9</button>
-              <button class="btn_page">10</button>
-              <button class="btn_page_next"><span class="hidden">다음</span></button>
-            </div>
-          </div>
           <div class="btn_wrap btn_collect btn_between">
             <div>
-              <span class="text_bold">2차수 (09:00 ~ 11:00)</span>
+              <span class="text_bold">2차수 (13:00 ~ 15:00)</span>
               <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
               <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
               <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
@@ -237,7 +227,7 @@
             <thead>
               <tr>
                 <th width="30px">No</th>
-                <th width="202px">그룹</th>
+                <th width="202px">팀</th>
                 <th width="202px">소속</th>
                 <th width="130px">성명</th>
                 <th width="170px">시승시간</th>
@@ -250,55 +240,42 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td class="text_bold">방송</td>
                 <td>글로벌 모토뉴스</td>
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
+                <td>[2차수] 13:00 ~ 15:00</td>
                 <td>미배정</td>
                 <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td>2</td>
+                <td class="text_bold">방송</td>
                 <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
-                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">조재환</a></span></td>
+                <td>[2차수] 13:00 ~ 15:00</td>
+                <td>B-01</td>
+                <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
-                <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
-                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
+                <td>3</td>
+                <td class="text_bold">방송</td>
+                <td>채널A</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">이민준</a></span></td>
+                <td>[2차수] 13:00 ~ 15:00</td>
+                <td>B-02</td>
+                <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
             </tbody>
           </table>
-          <div class="table_page">
-            <div class="page_control">
-              <button class="btn_page_prev"><span class="hidden">이전</span></button>
-              <button class="btn_page">1</button>
-              <button class="btn_page">2</button>
-              <button class="btn_page">3</button>
-              <sapn>...</sapn>
-              <button class="btn_page">8</button>
-              <button class="btn_page">9</button>
-              <button class="btn_page">10</button>
-              <button class="btn_page_next"><span class="hidden">다음</span></button>
-            </div>
-          </div>
           <div class="btn_wrap btn_collect btn_between">
             <div>
-              <span class="text_bold">3차수 (09:00 ~ 11:00)</span>
+              <span class="text_bold">3차수 (15:00 ~ 17:00)</span>
               <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
               <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
               <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
@@ -308,7 +285,7 @@
             <thead>
               <tr>
                 <th width="30px">No</th>
-                <th width="202px">그룹</th>
+                <th width="202px">팀</th>
                 <th width="202px">소속</th>
                 <th width="130px">성명</th>
                 <th width="170px">시승시간</th>
@@ -321,55 +298,42 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td class="text_bold">신문</td>
                 <td>글로벌 모토뉴스</td>
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
+                <td>[3차수] 15:00 ~ 17:00</td>
                 <td>미배정</td>
                 <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td>2</td>
+                <td class="text_bold">신문</td>
                 <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
-                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">조재환</a></span></td>
+                <td>[3차수] 15:00 ~ 17:00</td>
+                <td>C-01</td>
+                <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
-                <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
-                <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
+                <td>3</td>
+                <td class="text_bold">신문</td>
+                <td>채널A</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">이민준</a></span></td>
+                <td>[3차수] 15:00 ~ 17:00</td>
+                <td>C-02</td>
+                <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
             </tbody>
           </table>
-          <div class="table_page">
-            <div class="page_control">
-              <button class="btn_page_prev"><span class="hidden">이전</span></button>
-              <button class="btn_page">1</button>
-              <button class="btn_page">2</button>
-              <button class="btn_page">3</button>
-              <sapn>...</sapn>
-              <button class="btn_page">8</button>
-              <button class="btn_page">9</button>
-              <button class="btn_page">10</button>
-              <button class="btn_page_next"><span class="hidden">다음</span></button>
-            </div>
-          </div>
           <div class="btn_wrap btn_collect btn_between">
             <div>
-              <span class="text_bold">4차수 (09:00 ~ 11:00)</span>
+              <span class="text_bold">4차수 (17:00 ~ 19:00)</span>
               <span class="text_bold icon_txt icon_car">차량배정: <span>16</span>대</span>
               <span class="text_bold icon_txt icon_user">운전자: <span>16</span>명</span>
               <span class="text_bold icon_txt icon-group">동승자: <span>4</span>명</span>
@@ -379,7 +343,7 @@
             <thead>
               <tr>
                 <th width="30px">No</th>
-                <th width="202px">그룹</th>
+                <th width="202px">팀</th>
                 <th width="202px">소속</th>
                 <th width="130px">성명</th>
                 <th width="170px">시승시간</th>
@@ -392,52 +356,39 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td class="text_bold">유튜브</td>
                 <td>글로벌 모토뉴스</td>
                 <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
+                <td>[4차수] 17:00 ~ 19:00</td>
                 <td>미배정</td>
                 <td><button class="btn_fit popOpen" data-pop="check_in">체크인</button></td>
                 <td>운전자1, 동반자1</td>
                 <td>미확인</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
+                <td>2</td>
+                <td class="text_bold">유튜브</td>
                 <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">조재환</a></span></td>
+                <td>[4차수] 17:00 ~ 19:00</td>
+                <td>D-01</td>
                 <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td class="text_bold">A그룹(뉴미)</td>
-                <td>국민일보</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">채영석</a></span></td>
-                <td>09:00 ~ 12:00</td>
-                <td>1호차, (257도 5430)</td>
+                <td>3</td>
+                <td class="text_bold">유튜브</td>
+                <td>채널A</td>
+                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">이민준</a></span></td>
+                <td>[4차수] 17:00 ~ 19:00</td>
+                <td>D-02</td>
                 <td><span>완료</span><div class="btn_wrap"><button class="btn_fit btn_border">취소</button></div></td>
                 <td>운전자1</td>
                 <td>운전자1</td>
               </tr>
             </tbody>
           </table>
-          <div class="table_page">
-            <div class="page_control">
-              <button class="btn_page_prev"><span class="hidden">이전</span></button>
-              <button class="btn_page">1</button>
-              <button class="btn_page">2</button>
-              <button class="btn_page">3</button>
-              <sapn>...</sapn>
-              <button class="btn_page">8</button>
-              <button class="btn_page">9</button>
-              <button class="btn_page">10</button>
-              <button class="btn_page_next"><span class="hidden">다음</span></button>
-            </div>
-          </div>
 
           <!-- 팝업: 체크인 -->
           <div class="popup_wrap" id="check_in">

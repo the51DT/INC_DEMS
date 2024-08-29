@@ -16,7 +16,7 @@
         <p>Driving Experience Management Solution</p>
       </div>
       <a class="header_right" href="#">
-        <img class="header_profile" src="../assets/img/images/profile.png">
+        <img class="header_profile" src="../assets/img/icon/profile.svg">
         <p>홍길동</p>
       </a>
     </header>
@@ -85,18 +85,19 @@
           <div class="sort_wrap">
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title requir">차량 번호</p>
+                <p class="sort_title requir">차량명</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="Ex&#41; 257도5487">
-                  <span class="caption sort_caption requir">여백 없이 입력하세요</span>
+                  <input type="text" placeholder="차량명 입력 ex)GV80, G70, K8">
+                  <span class="caption sort_caption requir">여백 없이 입력</span>
                 </div>
               </div>
             </div>
             <div class="sort_con_double">
               <div class="sort_wrap">
-                <p class="sort_title requir">차량명</p>
+                <p class="sort_title requir">차량번호</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="Ex&#41; GV80">
+                  <input type="text" placeholder="Ex) A-01, B-01">
+                  <span class="caption sort_caption requir">차량번호 입력</span>
                 </div>
               </div>
             </div>
@@ -104,7 +105,17 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">차대번호</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="차대번호 입력">
+                  <input type="text" placeholder="Ex) 312">
+                  <span class="caption sort_caption requir">차대번호 3자리 입력</span>
+                </div>
+              </div>
+            </div>
+            <div class="sort_con_double">
+              <div class="sort_wrap">
+                <p class="sort_title requir">번호판 번호</p>
+                <div class="sort_con">
+                  <input type="text" placeholder="Ex)371조9994">
+                  <span class="caption sort_caption requir">여백 없이 입력</span>
                 </div>
               </div>
             </div>
@@ -112,7 +123,7 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">트림</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="Ex&#41; 3.5 가솔린 터보 5인승 22인치 쿠페 디자인 셀렉션2 &#40;카본 내장재&#41; 4WD">
+                  <input type="text" placeholder="Ex) 3.5 가솔린 터보 5인승 22인치 쿠페 디자인 셀렉션2 (카본 내장재) 4WD">
                   <span class="caption sort_caption requir">기존 트림명 표기와 동일한 맞춤법으로 입력하세요</span>
                 </div>
               </div>
@@ -121,7 +132,7 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">외색</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="비크블랙">
+                  <input type="text" placeholder="Ex) 비크블랙">
                   <span class="caption sort_caption requir">공백 없이 한글로 입력하세요</span>
                 </div>
               </div>
@@ -130,67 +141,8 @@
               <div class="sort_wrap">
                 <p class="sort_title requir">내색</p>
                 <div class="sort_con">
-                  <input type="text" placeholder="블랙모노+오렌지스티치">
+                  <input type="text" placeholder="Ex) 블랙모노+오렌지스티치">
                   <span class="caption sort_caption requir">공백 없이 한글로 입력하세요</span>
-                </div>
-              </div>
-            </div>
-            <div class="sort_con_double">
-              <div class="sort_wrap">
-                <p class="sort_title">차량상태</p>
-                <div class="sort_con">
-                  <table class="table_list table_manager">
-                    <thead>
-                      <tr>
-                        <th width="150px">입고확인</th>
-                        <th width="300px">차량상태</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="table_manager_input">
-                            <div class="input_type_radio">
-                              <input type="radio" name="confirme" value="unconfirmed" id="unconfirmed" checked>
-                              <label for="unconfirmed">미확인</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="confirme" value="confirmed" id="confirmed">
-                              <label for="confirmed">확인 완료</label>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="table_manager_input">
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="unassigned" id="unassigned" checked>
-                              <label for="unassigned">미배정</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="waiting" id="waiting">
-                              <label for="waiting">시승대기</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="driving" id="driving">
-                              <label for="driving">시승중</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="refueling" id="refueling">
-                              <label for="refueling">주유/충전중</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="finished" id="finished">
-                              <label for="finished">시승종료</label>
-                            </div>
-                            <div class="input_type_radio">
-                              <input type="radio" name="condition" value="returned" id="returned">
-                              <label for="returned">반납완료</label>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
               </div>
             </div>
@@ -201,9 +153,34 @@
             <button class="btn_default popOpen" data-pop="complete">저장</button>
           </div>
 
+          <!-- 등록완료 팝업 -->
           <div class="popup_wrap" id="complete">
             <div class="admin_popup">
               <h3>차량이 등록되었습니다</h3>
+              <button class="btn_middle btn_black popClose">확인</button>
+            </div>
+          </div>
+
+          <!-- 차량번호 중복 팝업 -->
+          <div class="popup_wrap" id="number">
+            <div class="admin_popup">
+              <h3>차량번호가 중복되어 저장할 수 없습니다</h3>
+              <button class="btn_middle btn_black popClose">확인</button>
+            </div>
+          </div>
+
+          <!-- 차대번호 중복 팝업 -->
+          <div class="popup_wrap" id="chassis">
+            <div class="admin_popup">
+              <h3>차대번호가 중복되어 저장할 수 없습니다</h3>
+              <button class="btn_middle btn_black popClose">확인</button>
+            </div>
+          </div>
+
+          <!-- 번호판 중복 팝업 -->
+          <div class="popup_wrap" id="plate">
+            <div class="admin_popup">
+              <h3>번호판 번호가 중복되어 저장할 수 없습니다</h3>
               <button class="btn_middle btn_black popClose">확인</button>
             </div>
           </div>
