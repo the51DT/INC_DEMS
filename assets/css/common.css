@@ -2198,3 +2198,28 @@ button .btn_img {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+
+.feed_wrap {
+  position: relative;
+  height: calc(100% - 89px);
+}
+.feed_tit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.feed_cont {
+  padding: 12px 38px;
+}
+.feed_input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.admin_wrap .feed_input input {
+  max-width: 100%;
+}
