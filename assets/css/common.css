@@ -2201,7 +2201,11 @@ button .btn_img {
 
 .feed_wrap {
   position: relative;
-  height: calc(100% - 89px);
+  height: calc(100vh - 221px);
+  overflow-y: auto;
+}
+.feed_detail + .feed_detail {
+  margin-top: 24px;
 }
 .feed_tit {
   display: flex;
@@ -2212,14 +2216,36 @@ button .btn_img {
 .feed_cont {
   padding: 12px 38px;
 }
+.feed_cont img {
+  height: 100px;
+}
+.feed_cont p:not(:only-child) {
+  margin: 12px 0;
+}
+.feed_cont p:first-child {
+  margin-top: 0;
+}
+.feed_cont p:last-child {
+  margin-bottom: 0;
+}
 .feed_input {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-top: 24px;
 }
 .admin_wrap .feed_input input {
   max-width: 100%;
+}
+.feed_notice {
+  position: sticky;
+  top: 0;
+  background-color: #F5F7FA;
+}
+.feed_notice .feed_cont {
+  color: #597eff;
+  font-weight: 700;
 }
