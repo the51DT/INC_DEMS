@@ -12,13 +12,15 @@
     <header class="header_admin">
       <div class="header_left">
         <button class="header_btn"><img src="../assets/img/icon/icon_menu.svg"></button>
-        <h1>DEMS</h1>
-        <p>Driving Experience Management Solution</p>
+        <h1><img src="../assets/img/icon/header_logo.svg"></h1>
       </div>
-      <a class="header_right" href="#">
-        <img class="header_profile" src="../assets/img/icon/profile.svg">
-        <p>홍길동</p>
-      </a>
+      <div class="header_right">
+        <a href="#">
+          <img class="header_profile" src="../assets/img/icon/profile.svg">
+          <span>홍길동</span>
+        </a>
+        <button>로그아웃</button>
+      </div>
     </header>
 
     <div class="container">
@@ -47,7 +49,7 @@
             <div class="sort_con">
               <input type="text" placeholder="플레이스홀더">
               <input type="text" class="sub_text_small" placeholder="text_small">
-              <input type="text" placeholder="disabled" disabled>
+              <input type="text" class="sub_text_small" placeholder="disabled" disabled>
               <div class="sort_double">
                 <input type="text" class="sort_text" placeholder="꽉차는 텍스트">
               </div>
@@ -84,15 +86,15 @@
               </div>
               <div class="sort_con_double">
                 <div class="sort_price">
-                  <span class="input_caption text_bold">텍스트</span>
+                  <span class="text_bold">텍스트</span>
                   <input type="text" class="sort_price" placeholder="1">
                 </div>
                 <div class="sort_price">
-                  <span class="input_caption text_bold">서브</span>
+                  <span class="text_bold">서브</span>
                   <input type="text" class="sort_price" placeholder="2">
                 </div>
                 <div class="sort_price">
-                  <span class="input_caption text_bold">서브</span>
+                  <span class="text_bold">서브</span>
                   <input type="text" class="sort_price" placeholder="3">
                 </div>
               </div>
@@ -142,7 +144,7 @@
           </div>
 
           <div class="btn_wrap btn_sort">
-            <button class="btn_default btn_sky">검색</button>
+            <button class="btn_default">검색</button>
           </div>
 
           <div class="admin_box">
@@ -160,7 +162,7 @@
                   </div>
                 </div>
                 <div class="sort_con_double">
-                  <button class="btn_default btn_full">최대</button>
+                  <button class="btn_default btn_full">로그인</button>
                 </div>
               </div>
             </div>
@@ -181,8 +183,8 @@
             <button class="btn_default btn_sky">하늘색</button>
             <button class="btn_default btn_white">흰색</button>
             <button class="btn_default btn_border">보더</button>
-            <button class="btn_middle">middle</button>
-            <button class="btn_small">small</button>
+            <button class="btn_default btn_red">체크인</button>
+            <button class="btn_fit">취소</button>
           </div>
 
           <h2 class="admin_title">팝업 (on 클래스 추가 필요)</h2>
@@ -222,67 +224,69 @@
           </div>
 
           <h2 class="admin_title">테이블</h2>
-          <table class="table_checklist">
-            <thead>
-              <tr>
-                <th style="width: 92px;">No</th>
-                <th style="width: 135px;">test</th>
-                <th style="width: 375px;">test2</th>
-                <th style="width: 145px;">test3</th>
-                <th style="width: 145px;">test4</th>
-                <th style="width: 157px;">test5</th>
-                <th style="width: 135px;">test6</th>
-                <th style="width: 189px;">test7</th>
-                <th style="width: 147px;">test8</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>4</td>
-                <td>PB00001</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">하이퍼링크</a></span></td>
-                <td>01012345678</td>
-                <td>30,000</td>
-                <td>홍길동</td>
-                <td>2024.08.01 12:00</td>
-                <td>80명 (운전 70, 동승 10)</td>
-                <td><button class=" btn_small">미리보기</button></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>PA00003</td>
-                <td><span class="text_overflow text_blue"><a class="text_underline" href="#">test test test test test test test test test test test test</a></span></td>
-                <td>01012345678</td>
-                <td>1,200</td>
-                <td>홍길동</td>
-                <td>2024.08.01 12:00</td>
-                <td>80명 (운전 70, 동승 10)</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>PA00003</td>
-                <td><span class="text_overflow">링크없음</span></td>
-                <td>01012345678</td>
-                <td>1,200</td>
-                <td>홍길동</td>
-                <td>2024.08.01 12:00</td>
-                <td>80명 (운전 70, 동승 10)</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>PA00003</td>
-                <td><span class="text_overflow"><a class="text_underline" href="#">언더라인만</a></span></td>
-                <td>01012345678</td>
-                <td>50,000</td>
-                <td>홍길동</td>
-                <td>2024.08.01 12:00</td>
-                <td>80명 (운전 70, 동승 10)</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table_wrap">
+            <table class="table_checklist">
+              <thead>
+                <tr>
+                  <th width="30px;">No</th>
+                  <th width="135px;">test</th>
+                  <th width="375px;">test2</th>
+                  <th width="145px;">test3</th>
+                  <th width="145px;">test4</th>
+                  <th width="157px;">test5</th>
+                  <th width="135px;">test6</th>
+                  <th width="189px;">test7</th>
+                  <th width="147px;">test8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4</td>
+                  <td>PB00001</td>
+                  <td><span class="text_overflow text_blue"><a class="text_underline" href="#">하이퍼링크</a></span></td>
+                  <td>01012345678</td>
+                  <td>30,000</td>
+                  <td>홍길동</td>
+                  <td>2024.08.01 12:00</td>
+                  <td>80명 (운전 70, 동승 10)</td>
+                  <td><button class=" btn_small">미리보기</button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PA00003</td>
+                  <td><span class="text_overflow text_blue"><a class="text_underline" href="#">test test test test test test test test test test test test</a></span></td>
+                  <td>01012345678</td>
+                  <td>1,200</td>
+                  <td>홍길동</td>
+                  <td>2024.08.01 12:00</td>
+                  <td>80명 (운전 70, 동승 10)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PA00003</td>
+                  <td><span class="text_overflow">링크없음</span></td>
+                  <td>01012345678</td>
+                  <td>1,200</td>
+                  <td>홍길동</td>
+                  <td>2024.08.01 12:00</td>
+                  <td>80명 (운전 70, 동승 10)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PA00003</td>
+                  <td><span class="text_overflow"><a class="text_underline" href="#">언더라인만</a></span></td>
+                  <td>01012345678</td>
+                  <td>50,000</td>
+                  <td>홍길동</td>
+                  <td>2024.08.01 12:00</td>
+                  <td>80명 (운전 70, 동승 10)</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="table_page">
             <div class="page_control">
               <button class="btn_page_prev"><span class="hidden">이전</span></button>
@@ -296,62 +300,64 @@
               <button class="btn_page_next"><span class="hidden">다음</span></button>
             </div>
           </div>
-          <table class="table_list">
-            <thead>
-              <tr>
-                <th width="135px">1</th>
-                <th width="385px">2</th>
-                <th width="145px">3</th>
-                <th width="145px">4</th>
-                <th width="215px">5</th>
-                <th width="155px">6</th>
-                <th width="155px">7</th>
-                <th width="90px"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="text_bold">볼드</span></td>
-                <td><span class="text_overflow">짧은글</span></td>
-                <td>50,000</td>
-                <td>50,000</td>
-                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
-                <td>텍스트</td>
-                <td>test</td>
-                <td><button class="btn_small">미리보기</button></td>
-              </tr>
-              <tr>
-                <td><span class="text_bold">볼드</span></td>
-                <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
-                <td>30,000</td>
-                <td>30,000</td>
-                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
-                <td><span class="text_red">빨간색</span></td>
-                <td>test</td>
-                <td><button class="btn_small">미리보기</button></td>
-              </tr>
-              <tr>
-                <td><span class="text_bold">볼드</span></td>
-                <td><span class="text_overflow">짧은글</span></td>
-                <td>50,000</td>
-                <td>50,000</td>
-                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
-                <td>텍스트</td>
-                <td>test</td>
-                <td><button class="btn_small">미리보기</button></td>
-              </tr>
-              <tr>
-                <td><span class="text_bold">볼드</span></td>
-                <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
-                <td>30,000</td>
-                <td>30,000</td>
-                <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
-                <td><span class="text_red">빨간색</span></td>
-                <td>test</td>
-                <td><button class="btn_small">미리보기</button></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table_wrap">
+            <table class="table_checklist">
+              <thead>
+                <tr>
+                  <th width="135px">1</th>
+                  <th width="385px">2</th>
+                  <th width="145px">3</th>
+                  <th width="145px">4</th>
+                  <th width="215px">5</th>
+                  <th width="155px">6</th>
+                  <th width="155px">7</th>
+                  <th width="90px"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="text_bold">볼드</span></td>
+                  <td><span class="text_overflow">짧은글</span></td>
+                  <td>50,000</td>
+                  <td>50,000</td>
+                  <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                  <td>텍스트</td>
+                  <td>test</td>
+                  <td><button class="btn_small">미리보기</button></td>
+                </tr>
+                <tr>
+                  <td><span class="text_bold">볼드</span></td>
+                  <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
+                  <td>30,000</td>
+                  <td>30,000</td>
+                  <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                  <td><span class="text_red">빨간색</span></td>
+                  <td>test</td>
+                  <td><button class="btn_small">미리보기</button></td>
+                </tr>
+                <tr>
+                  <td><span class="text_bold">볼드</span></td>
+                  <td><span class="text_overflow">짧은글</span></td>
+                  <td>50,000</td>
+                  <td>50,000</td>
+                  <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                  <td>텍스트</td>
+                  <td>test</td>
+                  <td><button class="btn_small">미리보기</button></td>
+                </tr>
+                <tr>
+                  <td><span class="text_bold">볼드</span></td>
+                  <td><span class="text_overflow">test test test test test test test test test test test test test test</span></td>
+                  <td>30,000</td>
+                  <td>30,000</td>
+                  <td>2024.08.01 ~ 2024.08.05 (5일간)</td>
+                  <td><span class="text_red">빨간색</span></td>
+                  <td>test</td>
+                  <td><button class="btn_small">미리보기</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <table class="table_detail">
             <tr>
               <th>1</th>
@@ -361,7 +367,7 @@
             </tr>
             <tr>
               <th>1</th>
-              <td>1111</td>
+              <td>1111111111111</td>
               <th>2</th>
               <td>2222</td>
             </tr>

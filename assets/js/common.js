@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const lnb = document.querySelector(".lnb_admin");
       if (lnb) {
         lnb.classList.toggle("on");
+        if (lnb.classList.contains("on")) {
+          const adminCon = document.querySelector(".contents_admin");
+          adminCon.addEventListener("click", () => {
+            lnb.classList.remove("on");
+          });
+        }
       }
     });
   }
