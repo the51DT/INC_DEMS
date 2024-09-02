@@ -1529,6 +1529,66 @@ button .btn_img {
 .table_checklist tbody tr:last-child td {
   border-bottom: 1px solid #999;
 }
+.table_checklist td .btn_wrap {
+  display: inline-block;
+  margin-left: 20px;
+}
+.table_checklist td .btn_wrap:only-child {
+  margin-left: 0;
+}
+.table_checklist td .btn_wrap button + button {
+  margin-left: 12px;
+}
+.table_checklist.table_manager {
+  margin-top: 10px;
+}
+.table_checklist.table_manager thead {
+  background: #2C3238;
+}
+.table_checklist.table_manager thead th {
+  text-align: center;
+  color: #FFF;
+} 
+.table_checklist.table_manager tbody tr {
+  background: #FFF;
+}
+.table_checklist.table_manager tbody tr:nth-child(odd) {
+  background: #efefef;
+}
+.table_checklist.table_manager .table_manager_input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.table_checklist.table_manager .table_manager_input .input_type_radio + .input_type_radio,
+.table_checklist.table_manager .table_manager_input .input_type_check + .input_type_check {
+  margin-left: 0;
+}
+.table_checklist.table_manager tbody td:first-child,
+.table_checklist.table_manager tbody td:last-child {
+  padding-left: 20px;
+}
+.table_checklist input[type="text"] {
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+.table_checklist td.table_cont {
+  padding: 36px;
+  height: 600px;
+  vertical-align: top;
+}
+.table_checklist div.table_cont {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.table_checklist div.table_cont img {
+  max-width: 100%;
+}
+.btn_wrap + .table_checklist {
+  margin-top: 24px;
+}
 .table_scroll {
   height: 154px;
   overflow-y: auto;
@@ -1578,63 +1638,6 @@ button .btn_img {
 .table_list td:first-of-type {
   padding-left: 20px;
   text-align: left;
-}
-.table_list td .btn_wrap {
-  display: inline-block;
-  margin-left: 20px;
-}
-.table_list td .btn_wrap:only-child {
-  margin-left: 0;
-}
-.table_list td .btn_wrap button + button {
-  margin-left: 12px;
-}
-.table_list.table_manager {
-  margin-top: 10px;
-}
-.table_list.table_manager thead {
-  background: #2C3238;
-}
-.table_list.table_manager thead th {
-  text-align: center;
-  color: #FFF;
-} 
-.table_list.table_manager tbody tr {
-  background: #FFF;
-}
-.table_list.table_manager tbody tr:nth-child(odd) {
-  background: #efefef;
-}
-.table_list.table_manager .table_manager_input {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.table_list.table_manager .table_manager_input .input_type_radio + .input_type_radio,
-.table_list.table_manager .table_manager_input .input_type_check + .input_type_check {
-  margin-left: 0;
-}
-.table_list.table_manager tbody td:first-child,
-.table_list.table_manager tbody td:last-child {
-  padding-left: 20px;
-}
-.table_list input[type="text"] {
-  width: calc(100% - 16px);
-  margin: 0 auto;
-}
-.table_list td.table_cont {
-  padding: 36px;
-  height: 600px;
-  vertical-align: top;
-}
-.table_list div.table_cont {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  overflow: auto;
-}
-.table_list div.table_cont img {
-  max-width: 100%;
 }
 .caption_area {
   margin: 16px 0;
