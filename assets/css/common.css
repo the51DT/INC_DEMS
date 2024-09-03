@@ -452,6 +452,9 @@
 .text_bold {
   font-weight: 700;
 }
+.text_left {
+  text-align: left;
+}
 .text_underline {
   text-decoration: underline;
   text-underline-position: under;
@@ -1547,7 +1550,7 @@ button .btn_img {
 }
 .table_checklist td .btn_wrap {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 .table_checklist td .btn_wrap:only-child {
   margin-left: 0;
@@ -2247,7 +2250,9 @@ button .btn_img {
 }
 
 .text_logo {
-  height: 14px;
+  width: 40px;
+  height: 13px;
+  object-fit: contain;
   margin-right: 8px;
 }
 
