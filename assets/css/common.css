@@ -227,7 +227,6 @@
   color: #111;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  border-bottom: 3px solid #00498C;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1090,6 +1089,7 @@
 }
 .btn_between span {
   font-size: 14px;
+  line-height: 24px;
 }
 .btn_center {
   justify-content: center;
@@ -1130,6 +1130,8 @@
   margin-left: 16px;
 }
 .btn_default {
+  display: flex;
+  align-items: center;
   padding: 4px 24px;
   border-radius: 8px;
   background: #111;
@@ -1189,7 +1191,8 @@
   width: 100%;
 }
 button .btn_img {
-  margin-right: 4px;
+  width: 16px;
+  margin-right: 8px;
 }
 .btn_download {
   display: flex;
@@ -1340,24 +1343,36 @@ button .btn_img {
   background-image: url("../img/icon/arrow_filled_black.svg");
 }
 .btn_page {
-  color: #a2a2a2;
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #666;
+
 }
+.btn_page.on,
 .btn_page:hover {
-  text-decoration: underline;
-  color: #000;
+  background-color: #00498C;
+  font-weight: 700;
+  color: #fff;
 }
 .btn_page_prev {
   flex-shrink: 0;
-  width: 4px;
-  height: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
   align-self: center;
   background-image: url("../img/icon/arrow_left.svg");
   background-size: cover;
 }
 .btn_page_next {
   flex-shrink: 0;
-  width: 4px;
-  height: 8px;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
   transform: rotate(180deg);
   align-self: center;
   background-image: url("../img/icon/arrow_left.svg");
@@ -1665,7 +1680,6 @@ button .btn_img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
 }
 .product_state {
   position: relative;
