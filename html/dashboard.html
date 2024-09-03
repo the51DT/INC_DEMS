@@ -82,7 +82,7 @@
         </ul>
       </div>
       <div class="contents_admin">
-        <div class="admin_wrap">
+        <div class="admin_wrap dash_wrap">
           <div class="admin_title">
             <h2>DASHBOARD</h2>
             <div class="admin_title_sub">
@@ -94,7 +94,7 @@
                 <option>2024년 4월 27일</option>
                 <option>2024년 4월 26일</option>
               </select>
-              <button class="btn_default">업데이트</button>
+              <button class="btn_default"><img class="btn_img" src="../assets/img/icon/change.svg">업데이트</button>
               <p>(마지막 업데이트 : 2024.05.01 14:00:51)</p>
             </div>
           </div>
@@ -104,10 +104,10 @@
                 <div class="sort_wrap sort_coulmn">
                   <div class="dash_title">
                     <h4>시승 참여자 현황</h4>
-                    <button>전체보기<img class="btn_icon" src="../assets/img/icon/arrow_right.svg"></button>
+                    <button><img class="btn_icon" src="../assets/img/icon/icon_move.svg">전체보기</button>
                   </div>
                   <div class="sort_con">
-                    <div class="admin_box dash_box">
+                    <div class="admin_box dash_box dash_box1">
                       <div class="dash_coulmn">
                         <p>계획인원</p>
                         <strong>100명</strong>
@@ -131,18 +131,18 @@
                 <div class="sort_wrap sort_coulmn">
                   <div class="dash_title">
                     <h4>공지사항</h4>
-                    <button>전체보기<img class="btn_icon" src="../assets/img/icon/arrow_right.svg"></button>
+                    <button><img class="btn_icon" src="../assets/img/icon/icon_move.svg">전체보기</button>
                   </div>
                   <div class="sort_con">
-                    <div class="admin_box">
-                      <ul class="dash_link">
-                        <li><a href="#" class="text_overflow">521호 3679 차량은 오전/오후 세션의 시승자가 다릅니다. 차질 없도록 각별히 신경</a></li>
-                        <li><a href="#" class="text_overflow">333허 2222 차량은 시승 중 사고로, 차량 운행 불가능합니다. 시승 신청자에게 현장</a></li>
-                        <li><a href="#" class="text_overflow">B세션에 시승이 몰려 있습니다  안전사고 없도록 현장감독 바랍니다 11:30</a></li>
-                        <li><a href="#" class="text_overflow">521호 3679차량은 회차 후 내부세차 필요합니다. 회차 시각에 맞춰서 신속히...</a></li>
-                        <li><a href="#" class="text_overflow">미배정된 차량이 4대 있습니다. 시승자가 현장 체크인 완료했는지 체크 바랍니다</a></li>
-                      </ul>
-                    </div>
+                    <table class="table_checklist">
+                      <tbody>
+                        <tr><td><a href="#" class="text_overflow">521호 3679 차량은 오전/오후 세션의 시승자가 다릅니다. 차질 없도록 각별히 신경</a><span>2022-02-28</span></td></tr>
+                        <tr><td><a href="#" class="text_overflow">333허 2222 차량은 시승 중 사고로, 차량 운행 불가능합니다. 시승 신청자에게 현장</a><span>2022-02-28</span></td></tr>
+                        <tr><td><a href="#" class="text_overflow">B세션에 시승이 몰려 있습니다 안전사고 없도록 현장감독 바랍니다 11:30</a><span>2022-02-28</span></td></tr>
+                        <tr><td><a href="#" class="text_overflow">521호 3679차량은 회차 후 내부세차 필요합니다. 회차 시각에 맞춰서 신속히...</a><span>2022-02-28</span></td></tr>
+                        <tr><td><a href="#" class="text_overflow">미배정된 차량이 4대 있습니다. 시승자가 현장 체크인 완료했는지 체크 바랍니다</a><span>2022-02-28</span></td></tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -151,10 +151,10 @@
               <div class="sort_wrap">
                 <div class="dash_title">
                   <h4>시승 차수별 배차 현황</h4>
-                  <button>전체보기<img class="btn_icon" src="../assets/img/icon/arrow_right.svg"></button>
+                    <button><img class="btn_icon" src="../assets/img/icon/icon_move.svg">전체보기</button>
                 </div>
                 <div class="sort_con">
-                  <div class="admin_box dash_box">
+                  <div class="admin_box dash_box dash_box2">
                     <div class="sort_wrap dash_flex">
                       <div class="dash_row">
                         <ul class="dash_link">
@@ -193,7 +193,10 @@
               </div>
             </div>
             <div class="sort_con_double">
-              <div class="dash_title"><h4>시승 차량 상태</h4></div>
+              <div class="dash_title">
+                <h4>시승 차량 상태</h4>
+                <button><img class="btn_icon" src="../assets/img/icon/icon_move.svg">전체보기</button>
+              </div>
               <div class="table_wrap">
                 <table class="dash_table">
                   <thead>
@@ -230,57 +233,57 @@
                       <td>GV80</td>
                       <td>A-01</td>
                       <td>487</td>
-                      <td class="check"></td>
-                      <td></td>
-                      <td class="check"></td>
-                      <td></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td class="check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td><i></i></td>
+                      <td class="check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>GV80</td>
                       <td>B-01</td>
                       <td>488</td>
-                      <td></td>
-                      <td class="check"></td>
-                      <td></td>
-                      <td class="check"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td><i></i></td>
+                      <td class="check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td><i></i></td>
+                      <td class="check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>GV80</td>
                       <td>C-01</td>
                       <td>489</td>
-                      <td></td>
-                      <td class="check"></td>
-                      <td></td>
-                      <td></td>
-                      <td class="accent check"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td class="accent"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td><i></i></td>
+                      <td class="check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td class="accent check"><i><div class="dash_date">2024.08.01 12:31</div></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td class="accent"><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
+                      <td><i></i></td>
                     </tr>
                   </tbody>
                 </table>
