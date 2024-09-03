@@ -1131,6 +1131,7 @@
 }
 .btn_default {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 4px 24px;
   border-radius: 8px;
