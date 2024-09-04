@@ -108,22 +108,33 @@
                   </div>
                   <div class="sort_con">
                     <div class="admin_box dash_box dash_box1">
-                      <div class="dash_coulmn">
-                        <p>계획인원</p>
-                        <strong>100명</strong>
-                        <p>운전자 80</p>
-                        <p>동반자 20</p>
+                      <div class="dash_flex">
+                        <div class="dash_coulmn">
+                          <p>참석인원</p>
+                          <div class="dash_flex">
+                            <strong class="text_red">15팀</strong>
+                            <div class="line"></div>
+                            <div>
+                              <p>운전자 15</p>
+                              <p>동반자 05</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dash_coulmn">
+                          <p class="text_right">계획인원</p>
+                          <div class="dash_flex">
+                            <div>
+                              <p>운전자 80</p>
+                              <p>동반자 20</p>
+                            </div>
+                            <div class="line"></div>
+                            <strong>80팀</strong>
+                          </div>
+                        </div>
                       </div>
                       <div class="dash_coulmn">
-                        <p>2024.05.01 08:00:10</p>
                         <div class="dash_gage gage_red" style="--gage: 20%;"></div>
-                        <p>현재 운전자 참석율 20%</p>
-                      </div>
-                      <div class="dash_coulmn">
-                        <p>참석인원</p>
-                        <strong class="text_red">20명</strong>
-                        <p>운전자 15</p>
-                        <p>동반자 05</p>
+                        <p>현재 운전자 참석율 <span class="text_bold">20%</span></p>
                       </div>
                     </div>
                   </div>
@@ -158,33 +169,78 @@
                     <div class="sort_wrap dash_flex">
                       <div class="dash_row">
                         <ul class="dash_link">
-                          <li><span>1차수 (09:00 ~ 11:00)</span><div class="dash_gage" style="--gage: 20%;"></div><span>20% (16대)</span></li>
-                          <li><span>2차수 (13:00 ~ 15:00)</span><div class="dash_gage gage_red" style="--gage: 50%;"></div><span>50% (40대)</span></li>
-                          <li><span>3차수 (15:00 ~ 17:00)</span><div class="dash_gage" style="--gage: 5%";></div><span>5% (4대)</span></li>
-                          <li><span>4차수 (17:00 ~ 19:00)</span><div class="dash_gage" style="--gage: 20%;"></div><span>20% (16대)</span></li>
-                          <li><span>미배정</span><div class="dash_gage" style="--gage: 5%";></div><span>5% (4대)</span></li>
+                          <li>
+                            <span>1차수 <span class="text_normal">(09:00 ~ 11:00)</span></span>
+                            <div class="dash_gage" style="--gage: 20%;"></div>
+                            <span><span class="text_bold">20%</span> (16대)</span>
+                          </li>
+                          <li>
+                            <span>2차수 <span class="text_normal">(13:00 ~ 15:00)</span></span>
+                            <div class="dash_gage gage_red" style="--gage: 50%;"></div>
+                            <span><span class="text_bold">50%</span> (40대)</span>
+                          </li>
+                          <li>
+                            <span>3차수 <span class="text_normal">(15:00 ~ 17:00)</span></span>
+                            <div class="dash_gage" style="--gage: 5%";></div>
+                            <span><span class="text_bold">5%</span> (4대)</span>
+                          </li>
+                          <li>
+                            <span>4차수 <span class="text_normal">(17:00 ~ 19:00)</span></span>
+                            <div class="dash_gage" style="--gage: 20%;"></div>
+                            <span><span class="text_bold">20%</span> (16대)</span>
+                          </li>
+                          <li>
+                            <span>미배정</span>
+                            <div class="dash_gage" style="--gage: 5%";></div>
+                            <span><span class="text_bold">5%</span> (4대)</span>
+                          </li>
                         </ul>
                       </div>
                       <div class="dash_row">
                         <div class="dash_border">
-                          <p>전체차량</p>
-                          <strong>80대</strong>
+                          <div>
+                            <img src="../assets/img/icon/dash_icon1.svg">
+                            <div>
+                              <p>전체차량</p>
+                              <strong>80대</strong>
+                            </div>
+                          </div>
                         </div>
                         <div class="dash_border">
-                          <p>시승대기</p>
-                          <strong>10대</strong>
+                          <div>
+                            <img src="../assets/img/icon/dash_icon2.svg">
+                            <div>
+                              <p>대기중</p>
+                              <strong class="text_gray">10대</strong>
+                            </div>
+                          </div>
                         </div>
                         <div class="dash_border">
-                          <p>시승중</p>
-                          <strong class="text_blue">60대</strong>
+                          <div>
+                            <img src="../assets/img/icon/dash_icon3.svg">
+                            <div>
+                              <p>시승중</p>
+                              <strong>60대</strong>
+                            </div>
+                          </div>
                         </div>
                         <div class="dash_border">
-                          <p>충전/주유중</p>
-                          <strong>5대</strong>
+                          <div>
+                            <img src="../assets/img/icon/dash_icon4.svg">
+                            <div>
+                              <p>충전/주유중</p>
+                              <strong>5대</strong>
+                            </div>
+                          </div>
                         </div>
                         <div class="dash_border">
-                          <p>정비중</p>
-                          <strong class="text_red">5대</strong>
+                          <div>
+                            <img src="../assets/img/icon/dash_icon5.svg">
+                            <div>
+                              <p>정비중</p>
+                              <strong>5대</strong>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -201,7 +257,7 @@
                 <table class="dash_table">
                   <thead>
                     <tr>
-                      <th rowspan="3" width="3%">No.</th>
+                      <th rowspan="3" width="3%">NO</th>
                       <th rowspan="3" width="7%">차량명</th>
                       <th rowspan="3" width="7%">차량번호</th>
                       <th rowspan="3" width="7%">차대번호</th>
