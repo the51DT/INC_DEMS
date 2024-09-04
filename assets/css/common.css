@@ -2343,30 +2343,44 @@ button .btn_img {
 .table_wrap {
   width: 100%;
   height: 100%;
-  overflow-x: auto;
+  max-height: calc(100vh - 144px);
+  overflow: auto;
 }
 .dash_table {
   width: 100%;
   font-size: 13px;
   line-height: 24px;
   text-align: center;
-  border-collapse: collapse;
-  border-top: 3px solid #00498C;
+  border-collapse: separate;
+	border-spacing: 0;
   color: #666;
   margin-bottom: 20px;
 }
 .dash_table th {
-  position: relative;
+  position: sticky;
+  top: 0;
   font-size: 14px;
   color: #111;
   padding: 12px 8px;
-  border: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  background-color: #fff;
   vertical-align: middle;
+  z-index: 5;
+}
+.dash_table thead tr:first-child th {
+  border-top: 3px solid #00498C;
+}
+.dash_table th.table_th2 {
+  top: 52px;
+}
+.dash_table th.table_th3 {
+  top: 101px;
 }
 .dash_table th:first-child {
   border-left: none;
 }
-.dash_table th:last-child {
+.dash_table th:last-child:not(.accent) {
   border-right: none;
 }
 .dash_table td {
@@ -2412,6 +2426,7 @@ button .btn_img {
   border: 1px solid #D8D8D8;
   box-shadow: 4px 4px 4px 0px #0000000D;
   transform: translate(100%, 100%);
+  z-index: 10;
 }
 .dash_table .input_type_radio {
   justify-content: center;
