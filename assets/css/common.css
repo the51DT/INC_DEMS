@@ -456,7 +456,7 @@
   color: #DC143C;
 }
 .text_black {
-  color: #111;
+  color: #111 !important;
 }
 .text_blue {
   color: #00498C;
@@ -1111,6 +1111,10 @@
   justify-content: space-between;
   width: 100%;
 }
+.btn_between > div {
+  display: flex;
+  align-items: center;
+}
 .btn_between span {
   font-size: 14px;
   line-height: 24px;
@@ -1166,21 +1170,9 @@
   color: #fff;
   text-align: center;
 }
-/* 버튼 사이즈 유형 삭제 필요 */
 .btn_middle {
-  width: 120px;
-  padding: 13px;
-  border-radius: 4px;
-  border: 1px solid #1e1e1e;
-  background: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  color: #1e1e1e;
-}
-.btn_middle.btn_black {
-  background: #1e1e1e;
-  border: none;
-  color: #fff;
+  padding: 1px 28px;
+  margin: 0 auto;
 }
 .btn_small {
   min-width: 70px;
@@ -1201,7 +1193,6 @@
   text-align: center;
   color: #999;
 }
-/* 버튼 사이즈 유형 삭제 필요 */
 .btn_full {
   padding: 10px;
   width: 100%;
@@ -1252,6 +1243,10 @@ button .btn_img {
   color: #fff;
 }
 .btn_gray {
+  background: #666;
+  color: #fff;
+}
+.btn_edit {
   padding: 0 16px;
   background: transparent;
   border: 1px solid #D8D8D8;
@@ -1579,6 +1574,9 @@ button .btn_img {
   display: inline-block;
   margin-left: 8px;
 }
+.table_checklist td .text_bold + .btn_wrap {
+  margin-left: 11px;
+}
 .table_checklist td .btn_wrap:only-child {
   margin-left: 0;
 }
@@ -1771,6 +1769,10 @@ button .btn_img {
 }
 .box_title + .table_detail {
   margin-top: 32px;
+}
+.table_detail + .btn_wrap {
+  margin-top: 16px;
+  margin-bottom: 48px;
 }
 .table_detail button {
   display: block;
@@ -2110,26 +2112,28 @@ button .btn_img {
 /* [HJ]20240822 */
 /*icon txt*/
 .icon_txt {
-  padding-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 16px;
+  color: #666;
 }
 .icon_txt::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 16px;
-  margin-right: 6px;
   background-repeat: no-repeat;
   background-size: contain;
-  vertical-align: bottom;
 }
 .icon_txt.icon_car::before {
-  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+  background-image: url(../img/icon/icon_car.svg);
 }
 .icon_txt.icon_user::before {
-  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+  background-image: url(../img/icon/icon_user.svg);
 }
-.icon_txt.icon-group::before {
-  background-color: #fe9494; /*아이콘 이미지 필요 (이미지 업데이트 시 해당 줄 삭제)*/
+.icon_txt.icon_group::before {
+  background-image: url(../img/icon/icon_group.svg);
 }
 .btn_sub + .sort_sub {
   margin-top: 36px;
@@ -2323,11 +2327,12 @@ button .btn_img {
 .dash_border > div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   width: 84px;
   height: 152px;
+  text-align: center;
 }
 .dash_border p {
   font-size: 14px;
