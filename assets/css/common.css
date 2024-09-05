@@ -236,6 +236,9 @@
   align-items: center;
   gap: 18px;
 }
+.admin_wrap .admin_title.border_title {
+  border-bottom: 3px solid #00498C;
+}
 .admin_wrap .admin_title h2 {
   font-size: 24px;
   line-height: 40px;
@@ -538,7 +541,7 @@
 .admin_wrap .popup_wrap input {
   display: block;
   width: 100%;
-  margin: 16px 0;
+  margin: 24px auto;
 }
 .admin_wrap select:focus {
   outline: none;
@@ -862,7 +865,7 @@
   font-size: 13px;
 }
 .sort_con_double + .sort_con_double {
-  margin-top: 26px;
+  margin-top: 24px;
 }
 .sort_con_sub {
   width: 100%;
@@ -906,7 +909,7 @@
 .sort_title {
   align-self: flex-start;
   flex-shrink: 0;
-  padding: 4px 16px;
+  padding: 5px 16px;
   width: 152px;
   font-weight: 700;
   font-size: 14px;
@@ -1412,7 +1415,7 @@ button .btn_img {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(17, 17, 17, 0.8);
   width: 100vw;
   height: 100vh;
   z-index: 99;
@@ -1425,25 +1428,28 @@ button .btn_img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 335px;
-  padding: 36px 20px 32px;
-  border-radius: 16px;
+  width: 358px;
+  padding: 45px 16px 51px;
+  border-radius: 8px;
   background: #fff;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
   font-family: "Noto Sans KR", sans-serif;
   text-align: center;
 }
 .admin_popup h3 {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
 }
-.admin_popup h3 + button {
+.admin_popup h3 + .btn_wrap {
   margin-top: 24px;
 }
 .admin_popup p {
-  margin: 13px auto 24px;
+  margin: 17px auto 24px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
+}
+.admin_popup .btn_wrap {
+  justify-content: center;
+  gap: 8px;
 }
 .page_popup {
   position: relative;
@@ -2364,7 +2370,7 @@ button .btn_img {
 }
 .table_wrap {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   max-height: calc(100vh - 144px);
   overflow: auto;
 }
@@ -2376,7 +2382,7 @@ button .btn_img {
   border-collapse: separate;
 	border-spacing: 0;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .dash_table th {
   position: sticky;
@@ -2504,9 +2510,11 @@ button .btn_img {
   margin-left: auto;
 }
 .sort_result {
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
-  margin: 36px auto;
+  color: #666;
+  margin: 48px auto;
 }
 
 .checklist_title {

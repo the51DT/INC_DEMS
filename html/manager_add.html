@@ -561,15 +561,19 @@
                 신중하게 결정해주세요
                 <input type="text" placeholder="입력창에 ‘삭제’라고 입력 후 확인 클릭">
               </p>
-              <button class="btn_middle btn_white popClose">취소</button>
-              <button class="btn_middle btn_black popClose popOpen" data-pop="delete_complete">확인</button>
+              <div class="btn_wrap">
+                <button class="btn_default btn_border popClose">취소</button>
+                <button class="btn_default popClose popOpen" data-pop="delete_complete">확인</button>
+              </div>
             </div>
           </div>
 
           <div class="popup_wrap" id="delete_complete">
             <div class="admin_popup">
               <h3>삭제되었습니다</h3>
-              <button class="btn_middle btn_black popClose">확인</button>
+              <div class="btn_wrap">
+                <button class="btn_default popClose">확인</button>
+              </div>
             </div>
           </div>
         </div>
