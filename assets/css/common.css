@@ -909,7 +909,8 @@
   padding: 4px 16px;
   width: 152px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 24px;
 }
 .sort_title.title_top {
   padding-top: 5.5px;
@@ -2464,14 +2465,43 @@ button .btn_img {
 }
 
 .sort_flex {
-  gap: 26px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 16px;
+  background-color: #F5F5F5;
 }
 .sort_flex > div {
   display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+}
+.sort_flex > div:first-child {
+  padding-left: 0;
+}
+.sort_flex > div:last-child {
+  padding-right: 0;
+}
+.sort_flex .sort_title {
+  align-self: center;
+  padding: 0;
+  width: auto;
 }
 .sort_flex .sort_con input,
 .sort_flex .sort_con select {
-  width: 200px;
+  width: 152px;
+}
+.sort_flex .sort_con input[type="text"] {
+  padding-right: 28px;
+  background-image: url(../img/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+}
+.sort_flex .btn_wrap {
+  margin-left: auto;
 }
 .sort_result {
   font-size: 20px;
