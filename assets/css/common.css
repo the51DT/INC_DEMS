@@ -1252,17 +1252,6 @@ button .btn_img {
   width: 16px;
   margin-right: 8px;
 }
-.btn_download {
-  display: flex;
-  gap: 6px;
-}
-.btn_download::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/icon/download.svg);
-}
 .sort_con .btn_default {
   width: auto;
 }
