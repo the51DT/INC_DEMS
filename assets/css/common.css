@@ -701,6 +701,36 @@
 .admin_wrap .input_type_check input[type="checkbox"] + label {
   margin-left: 8px;
 }
+.admin_wrap .input_type_toggle input[type="checkbox"] {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #D8D8D8;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.admin_wrap .input_type_toggle input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: left 0.2s ease-in-out;
+}
+.admin_wrap .input_type_toggle input[type="checkbox"]:checked {
+  border: none;
+  background-image: none;
+  background-color: #00498C;
+}
+.admin_wrap .input_type_toggle input[type="checkbox"]:checked::before {
+  left: 14px;
+}
 .admin_wrap .input_type_file input[type="text"]:disabled {
   width: 314px;
   background-color: #FFF;
@@ -1054,6 +1084,12 @@
   width: 100%;
   max-width: 440px;
   position: relative;
+}
+.input_type_toggle {
+  display: inline-block;
+}
+table td span + .input_type_toggle {
+  margin: 0 16px;
 }
 .sub_input {
   display: flex;
