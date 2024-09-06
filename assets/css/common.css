@@ -1685,6 +1685,13 @@ button .btn_img {
 .table_checklist .table_border_last {
   border-bottom: 1px solid #999;
 }
+.table_checklist td p {
+  text-align: left;
+  line-height: 150%;
+}
+.table_checklist td p + p {
+  margin-top: 16px;
+}
 .btn_wrap + .table_checklist {
   margin-top: 24px;
 }
@@ -2595,15 +2602,13 @@ button .btn_img {
 }
 
 .list_wrap {
-  background-color: #FFF;
-  padding: 16px;
-  margin-top: 26px;
+  margin-top: 48px;
 }
-.list_wrap .table_checklist th,
-.list_wrap .table_checklist td {
-  border: none;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+.list_wrap .table_checklist tr:last-child th {
+  border-bottom: 1px solid #999;
+}
+.list_wrap .table_checklist tr td {
+  text-align: left;
 }
 
 .feed_wrap {
