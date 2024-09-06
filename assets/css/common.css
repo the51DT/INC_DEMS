@@ -970,6 +970,10 @@
   align-items: center;
   gap: 16px;
 }
+.sort_price span {
+  font-size: 14px;
+  line-height: 24px;
+}
 .sort_price + .sort_price {
   margin-left: 24px;
 }
@@ -2543,7 +2547,9 @@ button .btn_img {
 .sort_flex .sort_con select {
   width: 152px;
 }
-.sort_flex .sort_con input[type="text"] {
+.sort_flex .sort_con input[type="text"],
+.sort_flex .sort_con input[type="tel"],
+.sort_flex .sort_con input[type="email"] {
   padding-right: 28px;
   background-image: url(../img/icon/search.svg);
   background-repeat: no-repeat;

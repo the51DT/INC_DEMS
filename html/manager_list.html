@@ -47,48 +47,43 @@
       <div class="contents_admin">
         <div class="admin_wrap">
           <h2 class="admin_title">계정 목록</h2>
-          <div class="sort_wrap">
-            <div class="sort_con_double">
-              <div class="sort_wrap sort_half">
-                <div>
-                  <p class="sort_title">이름</p>
-                  <div class="sort_con">
-                    <input type="text" placeholder="이름을 입력하세요">
-                  </div>
-                </div>
-                <div>
-                  <p class="sort_title">휴대폰</p>
-                  <div class="sort_con">
-                    <input type="tel" placeholder="휴대폰 번호를 입력하세요">
-                  </div>
-                </div>
+          <div class="sort_flex">
+            <div>
+              <p class="sort_title">이름</p>
+              <div class="sort_con">
+                <input type="text" placeholder="이름을 입력하세요">
               </div>
             </div>
-            <div class="sort_con_double">
-              <div class="sort_wrap sort_half">
-                <div>
-                  <p class="sort_title">이메일(ID)</p>
-                  <div class="sort_con">
-                    <input type="email" placeholder="이메일 주소를 입력하세요">
-                  </div>
-                </div>
-                <div>
-                  <p class="sort_title">계정구분</p>
-                  <div class="sort_con">
-                    <select name="product_name" class="sort_select">
-                      <option>계정 구분을 선택하세요</option>
-                      <option>1</option>
-                    </select>
-                    <button class="btn_default">조회</button>
-                  </div>
-                </div>
+            <div>
+              <p class="sort_title">휴대폰</p>
+              <div class="sort_con">
+                <input type="tel" placeholder="휴대폰 번호를 입력하세요">
               </div>
+            </div>
+            <div>
+              <p class="sort_title">이메일(ID)</p>
+              <div class="sort_con">
+                <input type="email" placeholder="이메일 주소를 입력하세요">
+              </div>
+            </div>
+            <div>
+              <p class="sort_title">계정구분</p>
+              <div class="sort_con">
+                <select name="product_name" class="sort_select">
+                  <option>계정 구분을 선택하세요</option>
+                  <option>1</option>
+                </select>
+              </div>
+            </div>
+            <div class="btn_wrap">
+                <button class="btn_default">조회</button>
             </div>
           </div>
 
           <div class="btn_wrap btn_collect btn_end">
-            <button class="btn_default"><img src="../assets/img/icon/profile.svg" class="btn_img">+ 계정추가</button>
+            <button class="btn_default"><img src="../assets/img/icon/user_add.svg" class="btn_img">계정추가</button>
           </div>
+
           <table class="table_checklist">
             <thead>
               <tr>
