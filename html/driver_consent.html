@@ -78,170 +78,82 @@
       <div class="contents_admin">
         <div class="admin_wrap">
           <h2 class="admin_title">시승 동의서</h2>
-          <div class="sort_wrap">
-            <div class="sort_con_double">
-              <div class="sort_wrap sort_flex">
-                <div>
-                  <p class="sort_title">시승일자</p>
-                  <div class="sort_con">
-                    <select name="product_name" class="sort_select">
-                      <option>전체</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <p class="sort_title">그룹</p>
-                  <div class="sort_con">
-                    <select name="product_name" class="sort_select">
-                      <option>전체</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <p class="sort_title">성명</p>
-                  <div class="sort_con">
-                    <input type="text" placeholder="전체">
-                    <button class="btn_default btn_caption">검색</button>
-                  </div>
-                </div>
+          <div class="sort_flex">
+            <div>
+              <p class="sort_title">팀</p>
+              <div class="sort_con">
+                <select name="product_name" class="sort_select">
+                  <option>전체</option>
+                </select>
               </div>
+            </div>
+            <div>
+              <p class="sort_title">소속</p>
+              <div class="sort_con">
+                <input type="text" placeholder="전체">
+              </div>
+            </div>
+            <div>
+              <p class="sort_title">시승동의서 작성 여부</p>
+              <div class="sort_con">
+                <select name="product_name" class="sort_select">
+                  <option>전체</option>
+                </select>
+              </div>
+            </div>
+            <div class="btn_wrap">
+              <button class="btn_default btn_caption">검색</button>
             </div>
           </div>
           <table class="table_checklist">
             <thead>
               <tr>
                 <th width="30px">No</th>
-                <th width="">작성일자</th>
-                <th width="">팀</th>
-                <th width="">소속</th>
-                <th width="">성명</th>
-                <th width="">시승차수</th>
-                <th width="">배정차량</th>
-                <th width="">계획 인원</th>
-                <th width="">확인 인원</th>
-                <th width="">시승동의서</th>
+                <th width="100px">팀</th>
+                <th width="150px">소속</th>
+                <th width="100px">성명</th>
+                <th width="250px">시승시간</th>
+                <th width="100px">배정차량</th>
+                <th width="250px">시승동의서</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>2</td>
-                <td>2024.08.01 08:30</td>
                 <td>신문</td>
                 <td>국민일보</td>
                 <td>조재환</td>
-                <td>[1차수] 09:00 ~ 12:00</td>
+                <td><span class="text_bold">[1차수]</span> 09:00 ~ 12:00</td>
                 <td>C-01</td>
-                <td>운전자1</td>
-                <td>운전자1</td>
-                <td><button class="btn_fit btn_border popOpen" data-pop="consentForm">보기</button></td>
+                <td>
+                  <div class="input_type_toggle">
+                    <span>미작성</span>
+                    <label>
+                      <input type="checkbox" checked>
+                    </label>
+                    <span>작성</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>1</td>
-                <td>2024.08.01 08:30</td>
                 <td>방송</td>
                 <td>채널A</td>
                 <td>이민준</td>
-                <td>[2차수] 09:00 ~ 12:00</td>
+                <td><span class="text_bold">[2차수]</span> 09:00 ~ 12:00</td>
                 <td>A-01</td>
-                <td>운전자1, 동반자2</td>
-                <td>운전자1, 동반자2</td>
-                <td><button class="btn_fit btn_border popOpen" data-pop="consentForm">보기</button></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                  <div class="input_type_toggle">
+                    <span>미작성</span>
+                    <label>
+                      <input type="checkbox" checked>
+                    </label>
+                    <span>작성</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
-          <div class="table_page">
-            <div class="page_control">
-              <button class="btn_page_prev"><span class="hidden">이전</span></button>
-              <button class="btn_page on">1</button>
-              <button class="btn_page">2</button>
-              <button class="btn_page">3</button>
-              <button class="btn_page">4</button>
-              <button class="btn_page">5</button>
-              <button class="btn_page">6</button>
-              <button class="btn_page">7</button>
-              <button class="btn_page">8</button>
-              <button class="btn_page">9</button>
-              <button class="btn_page">10</button>
-              <button class="btn_page_next"><span class="hidden">다음</span></button>
-            </div>
-          </div>
-
-          <div class="popup_wrap" id="consentForm">
-            <div class="page_popup">
-              <div class="box_title">
-                <h3>제네시스 시승동의서</h3>
-              </div>
-              <div class="btn_wrap btn_end">
-                <button class="btn_download">PDF저장</button>
-              </div>
-              <div class="form_img">
-                <img src="https://placehold.co/600x800?text=consent form\narea">
-              </div>
-              <div class="form_input_wrap">
-                <p>본인은 동의서 내용을 상세히 읽고 충분히 이해하였으며, 시승 동의서에 동의합니다.</p>
-                <div class="form_input">
-                  <div class="input_type_radio">
-                    <input type="radio" name="agreement" value="agreement" id="agreement" checked>
-                    <label for="agreement">동의함</label>
-                  </div>
-                  <div class="input_type_radio">
-                    <input type="radio" name="agreement" value="no_agreement" id="no_agreement">
-                    <label for="no_agreement">동의 안함</label>
-                  </div>
-                </div>
-              </div>
-              <div class="sign_wrap">
-                <canvas id="signCanvas"></canvas>
-                <div class="sign_placeholder">서명해주세요.</div>
-                <div class="ctrl_sign">
-                  <button id="clearBtn">지우기</button>
-                  <!-- <button id="saveBtn">저장하기</button> -->
-                  <button id="refreshBtn">새로고침</button>
-                </div>
-              </div>
-              <p class="consent-sign">서명일자 <span>2024.08.01 08:34</span><span class="text_bold sign_name">더피프티원 이재호</span></p>
-              <div class="btn_wrap btn_center">
-                <button class="btn_middle btn_black popClose">확인</button>
-              </div>
-              <button class="btn_close popClose"><span class="hidden">닫기</span></button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

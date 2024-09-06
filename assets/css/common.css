@@ -1086,10 +1086,14 @@
   position: relative;
 }
 .input_type_toggle {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
-table td span + .input_type_toggle {
-  margin: 0 16px;
+.input_type_toggle span {
+  display: inline-block;
+  width: 36px;
+  text-align: left;
 }
 .sub_input {
   display: flex;
@@ -2547,6 +2551,9 @@ button .btn_img {
 }
 .sort_flex .btn_wrap {
   margin-left: auto;
+}
+.sort_flex + table {
+  margin-top: 48px;
 }
 .sort_result {
   font-size: 14px;
