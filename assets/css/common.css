@@ -2626,7 +2626,7 @@ button .btn_img {
 
 .feed_wrap {
   position: relative;
-  height: calc(100vh - 221px);
+  height: calc(100vh - 250px);
   overflow-y: auto;
 }
 .feed_detail + .feed_detail {
@@ -2668,7 +2668,7 @@ button .btn_img {
 .feed_notice {
   position: sticky;
   top: 0;
-  background-color: #F5F7FA;
+  background-color: #fff;
 }
 .feed_notice .feed_cont {
   color: #597eff;
