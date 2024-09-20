@@ -1617,6 +1617,9 @@ button .btn_img {
 .table_checklist td .btn_wrap button + button {
   margin-left: 12px;
 }
+.table_no_data {
+  height: 300px;
+}
 .table_checklist.table_manager {
   margin-top: 10px;
 }
