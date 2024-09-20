@@ -2410,6 +2410,9 @@ button .btn_img {
   max-height: calc(100vh - 144px);
   overflow: auto;
 }
+.table_wrap + .btn_wrap {
+  margin-top: 24px;
+}
 .dash_table {
   width: 100%;
   font-size: 13px;
@@ -2418,6 +2421,8 @@ button .btn_img {
   border-collapse: separate;
 	border-spacing: 0;
   color: #666;
+}
+.dash_table:has(i) {
   margin-bottom: 24px;
 }
 .dash_table th {
