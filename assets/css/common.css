@@ -2657,6 +2657,10 @@ button .btn_img {
 .feed_cont p:last-child {
   margin-bottom: 0;
 }
+.feed_notice .feed_detail button {
+  margin-left: auto;
+  margin-right: 8px;
+}
 .feed_input {
   position: sticky;
   bottom: 0;
