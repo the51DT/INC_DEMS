@@ -2625,6 +2625,12 @@ button .btn_img {
   position: relative;
   height: calc(100vh - 250px);
   overflow-y: auto;
+  padding: 0 12px;
+}
+.feed_detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
 }
 .feed_detail + .feed_detail {
   margin-top: 24px;
@@ -2633,13 +2639,14 @@ button .btn_img {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  color: #999;
+  flex-shrink: 0;
+}
+.feed_tit p:not(:last-child) {
+  width: 150px;
 }
 .feed_cont {
-  padding: 12px 38px;
-}
-.feed_cont img {
-  height: 100px;
+  padding-top: 4px;
 }
 .feed_cont p:not(:only-child) {
   margin: 12px 0;
@@ -2657,15 +2664,27 @@ button .btn_img {
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-top: 24px;
+  background-color: #fff;
+  border-top: 1px solid #D8D8D8;
   margin-top: 24px;
 }
-.admin_wrap .feed_input input {
+.admin_wrap .feed_input input[type="text"] {
   max-width: 100%;
+}
+.admin_wrap .feed_input .input_type_check {
+  flex-shrink: 0;
+  width: 135px;
 }
 .feed_notice {
   position: sticky;
   top: 0;
   background-color: #fff;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.feed_notice + .feed_detail {
+  margin-top: 24px;
 }
 .feed_notice .feed_cont {
   color: #597eff;
