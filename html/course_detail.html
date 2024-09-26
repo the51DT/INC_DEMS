@@ -96,7 +96,7 @@
                 <td>송기철</td>
                 <td>2024.08.01</td>
                 <td>320</td>
-                <td><button class="btn_icon"><img src="../assets/img/icon/download.svg"></button></td>
+                <td><button class="btn_icon popOpen" data-pop="attachment"><img src="../assets/img/icon/download.svg"></button></td>
               </tr>
               <tr>
                 <td colspan="6" class="table_cont">
@@ -125,6 +125,20 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div class="popup_wrap" id="attachment">
+            <div class="admin_popup">
+              <h3>첨부파일 다운로드</h3>
+              <ul>
+                <li><button>파일명1.확장자</button></li>
+                <li><button>파일명2.확장자</button></li>
+                <li><button>파일명3.확장자</button></li>
+              </ul>
+              <div class="btn_wrap">
+                <button class="btn_default popClose">닫기</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

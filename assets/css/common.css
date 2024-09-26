@@ -1295,6 +1295,9 @@ button .btn_img {
   border: 1px solid #111;
   color: #111;
 }
+.btn_border.btn_fit {
+  padding: 0 11px;
+}
 .btn_order {
   width: 28px;
   height: 28px;
@@ -1477,6 +1480,31 @@ button .btn_img {
 .admin_popup .btn_wrap {
   justify-content: center;
   gap: 8px;
+}
+.admin_popup ul {
+  margin: 17px auto 24px;
+}
+.admin_popup ul li button {
+  font-size: 14px;
+  line-height: 30px;
+  color: #999;
+}
+.admin_popup ul li button:hover {
+  color: #00498C;
+  text-decoration: underline;
+}
+.admin_popup ul li button::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  background-image: url(../img/icon/download.svg);
+  background-size: contain;
+  opacity: .5;
+}
+.admin_popup ul li button:hover:before {
+  opacity: 1;
 }
 .page_popup {
   position: relative;
