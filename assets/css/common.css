@@ -2722,3 +2722,12 @@ button .btn_img {
   color: #597eff;
   font-weight: 700;
 }
+.file_list li {
+  color: #999;
+}
+.file_list li + li {
+  margin-top: 14px;
+}
+.file_list li button {
+  margin-left: 8px;
+}
