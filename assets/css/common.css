@@ -2642,10 +2642,13 @@ button .btn_img {
 .checklist_img {
   position: relative;
   width: 100%;
-  height: 200px;
+  padding-top: 75%;
   flex-shrink: 0;
 }
-.checklist_img img {
+.checklist_img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
