@@ -2250,6 +2250,10 @@ button .btn_img {
 .dash_wrap .sort_con_double + .sort_con_double {
   margin-top: 48px;
 }
+.dash_event {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
 .dash_title {
   display: flex;
   justify-content: space-between;
@@ -2602,15 +2606,33 @@ button .btn_img {
   margin-bottom: 26px;
   font-size: 20px;
 }
-.checklist_wrap {
+.checklist_title .input_type_file {
+  width: fit-content;
+}
+.checklist_img_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   width: 100%;
 }
-.checklist_wrap + .checklist_wrap {
-  margin-top: 26px;
+.checklist_img_list + .checklist_img_list {
+  margin-top: 24px;
+}
+.checklist_img_title {
+  grid-column: 1 / 4;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 36px;
+}
+.checklist_wrap {
+  width: 100%;
+  height: auto;
 }
 .checklist_wrap > p {
   margin-top: 16px;
   font-size: 16px;
+  line-height: 24px;
 }
 .checklist_img_wrap {
   display: flex;
@@ -2619,8 +2641,8 @@ button .btn_img {
 }
 .checklist_img {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
   flex-shrink: 0;
 }
 .checklist_img img {
