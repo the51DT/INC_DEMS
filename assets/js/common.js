@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const textArea = document.querySelectorAll(".checklist_text")
+  textArea.forEach((el) => {
+    el.addEventListener("input", () => {
+      el.style.height = "53px";
+      el.style.height = el.scrollHeight + "px";
+    });
+  })
+
   const headerBtn = document.querySelector(".header_btn")
   if (headerBtn) {
     headerBtn.addEventListener("click", () => {

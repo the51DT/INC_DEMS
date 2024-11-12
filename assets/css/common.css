@@ -2664,6 +2664,10 @@ button .btn_img {
   width: 30px;
   height: 30px;
 }
+.table_checklist .checklist_text {
+  height: 53px;
+  overflow: hidden;
+}
 
 .list_wrap {
   margin-top: 48px;
