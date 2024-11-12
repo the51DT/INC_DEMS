@@ -1716,6 +1716,7 @@ button .btn_img {
 .table_checklist td p {
   text-align: left;
   line-height: 150%;
+  word-break: break-all;
 }
 .table_checklist td p + p {
   margin-top: 16px;
