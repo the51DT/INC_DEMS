@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
       el.style.height = "53px";
       el.style.height = el.scrollHeight + "px";
     });
+    window.addEventListener("resize", () => {
+      el.style.height = "53px";
+      el.style.height = el.scrollHeight + "px";
+    });
   })
 
   const headerBtn = document.querySelector(".header_btn")
