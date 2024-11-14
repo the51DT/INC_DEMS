@@ -2761,3 +2761,13 @@ button .btn_img {
 .file_list li button {
   margin-left: 8px;
 }
+
+.flatpickr-wrapper input[type="text"] {
+  width: 152px;
+  background: url("../img/icon/icon_time.svg") no-repeat right 13px center;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+}
+.flatpickr-wrapper .flatpickr-calendar {
+  width: 230px;
+}

@@ -6,6 +6,10 @@
   <title>DEMS | 시승 행사 관리</title>
   <link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
   <script src="../assets/js/common.js"></script>
+  <!-- 타임피커 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
 </head>
 <body>
   <div class="admin">
@@ -58,7 +62,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -95,7 +100,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -121,7 +127,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -153,7 +160,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -179,7 +187,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -205,7 +214,8 @@
                 <div class="sort_price">
                   <span class="text_bold">행사시간</span>
                   <div class="sort_date">
-                    <input type="time"><input type="time">
+                    <input type="text" class="time_picker" placeholder="시작">~
+                    <input type="text" class="time_picker" placeholder="종료">
                   </div>
                 </div>
                 <div class="sort_price">
@@ -269,5 +279,18 @@
       </div>
     </div>
   </div>
+
+  <script>
+    flatpickr.localize(flatpickr.l10ns.ko);
+    flatpickr(".time_picker", {
+      static: true,
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      altInput: false,
+      allowInput:true,
+      minuteIncrement: 10,
+    });
+  </script>
 </body>
 </html>
