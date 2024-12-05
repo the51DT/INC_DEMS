@@ -2536,9 +2536,6 @@ button .btn_img {
 .dash_table .input_type_radio {
   justify-content: center;
 }
-.table_wrap:has(.dash_table)::-webkit-scrollbar {
-  width: 0px;
-}
 
 .text_logo {
   width: 40px;
